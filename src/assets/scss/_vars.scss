@@ -1,0 +1,64 @@
+// Mina Skys
+// -------------------------
+
+$mina-sky: #c4cdd5;
+$mina-sky-light: #dfe3e8;
+$mina-sky-lighter: #f4f6f8;
+
+// Other Mina colors
+// -------------------------
+
+$mina-indigo: #385080;
+$mina-denim: #163f79;
+$mina-ink: #212b36;
+$mina-red: #de3618;
+$mina-salmon: #ee8282;
+$mina-yellow: #eec200;
+$mina-green: #50b83c;
+$mina-white: #ffffff;
+$mina-black: #000000;
+
+$mina-indigo-light: #6380bb;
+$mina-denim-light: #2363be;
+$mina-ink-light: #454f5b;
+$mina-red-light: #fead9a;
+$mina-salmon-light: #f8c9c9;
+$mina-yellow-light: #ffea8a;
+$mina-green-light: #bbe5b3;
+
+$mina-indigo-lighter: #aabada;
+$mina-denim-lighter: #ebf5fa;
+$mina-ink-lighter: #637381;
+$mina-red-lighter: #fbeae5;
+$mina-yellow-lighter: #fcf1cd;
+$mina-green-lighter: #e3f1df;
+
+// Text colors
+// -------------------------
+
+$tx-black: $mina-ink;
+$tx-black-light: $mina-ink-light;
+$tx-black-lighter: $mina-ink-lighter;
+
+// UI colors
+// -------------------------
+
+$primary: $mina-denim-light;
+$success: $mina-green;
+$warning: $mina-yellow;
+$danger: $mina-red;
+
+// Links
+// -------------------------
+
+$link-color: $mina-denim-light !default;
+
+// Width
+// -------------------------
+
+$app-content-width: 1440px;
+
+// Height
+// -------------------------
+
+$global-header-height: 56px;
