@@ -2,6 +2,7 @@ export interface Props {
   size: string;
   type: string;
   maxWidth: string;
+  minWidth: string;
   height: string;
   iconType: string;
   iconName: string;

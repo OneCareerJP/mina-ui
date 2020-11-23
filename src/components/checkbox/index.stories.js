@@ -1,7 +1,7 @@
-import MCheckbox from './index.vue';
+import MCheckbox from "./index.vue";
 
 export default {
-  title: 'Checkbox',
+  title: "Checkbox",
   component: MCheckbox,
   argTypes: {}
 };
@@ -27,7 +27,7 @@ const Template = (args, { argTypes }) => ({
       currentValues: [],
       samples: [
         {
-          name: 'sample'
+          name: "sample"
         }
       ]
     };
@@ -56,6 +56,6 @@ const Template = (args, { argTypes }) => ({
 
 export const Default = Template.bind({});
 Default.args = {
-  label: 'Label Text',
+  label: "Label Text",
   checked: false
 };

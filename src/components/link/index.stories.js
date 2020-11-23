@@ -1,14 +1,14 @@
-import MLink from './index.vue';
+import MLink from "./index.vue";
 
 export default {
-  title: 'Link',
+  title: "Link",
   component: MLink,
   argTypes: {
     type: {
-      control: { type: 'select', options: ['solo', 'label', 'text', 'filled'] }
+      control: { type: "select", options: ["solo", "label", "text", "filled"] }
     },
     color: {
-      control: { type: 'select', options: ['denim-light', 'ink', 'ink-light'] }
+      control: { type: "select", options: ["denim-light", "ink", "ink-light"] }
     }
   }
 };
@@ -21,5 +21,5 @@ const Template = (args, { argTypes }) => ({
 
 export const Default = Template.bind({});
 Default.args = {
-  text: 'LINK TEXT'
+  text: "LINK TEXT"
 };

@@ -10,18 +10,18 @@
 </template>
 
 <script lang="ts">
-import Vue from 'vue';
-import { Props, Data, Computed, Methods } from './types';
+import Vue from "vue";
+import { Props, Data, Computed, Methods } from "./types";
 export default Vue.extend<Props, Data, Computed, Methods>({
-  name: 'MStatus',
+  name: "MStatus",
   props: {
     type: {
       type: String,
-      default: ''
+      default: ""
     },
     label: {
       type: String,
-      default: ''
+      default: ""
     },
     isActive: {
       type: Boolean,
