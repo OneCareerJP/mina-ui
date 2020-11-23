@@ -1,7 +1,7 @@
-import MSelectbox from './index.vue';
+import MSelectbox from "./index.vue";
 
 export default {
-  title: 'Selectbox',
+  title: "Selectbox",
   component: MSelectbox,
   argTypes: {}
 };
@@ -23,7 +23,7 @@ const Template = (args, { argTypes }) => ({
 
 export const Default = Template.bind({});
 Default.args = {
-  placeholder: 'placeholder',
+  placeholder: "placeholder",
   selectList: [2020, 2021, 2022, 2023],
   selectedValue: 2020
 };

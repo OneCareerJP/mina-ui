@@ -15,31 +15,31 @@
 </template>
 
 <script lang="ts">
-import Vue from 'vue';
-import { Data, Methods, Computed, Props } from './types';
-import MIcon from '@/components/icon/index.vue';
+import Vue from "vue";
+import { Data, Methods, Computed, Props } from "./types";
+import MIcon from "@/components/icon/index.vue";
 
 export default Vue.extend<Data, Methods, Computed, Props>({
-  name: 'MLink',
+  name: "MLink",
   components: {
     MIcon
   },
   props: {
     type: {
       type: String,
-      default: ''
+      default: ""
     },
     color: {
       type: String,
-      default: ''
+      default: ""
     },
     iconName: {
       type: String,
-      default: 'angle-right'
+      default: "angle-right"
     },
     to: {
-      type: [String, null],
-      default: ''
+      type: String,
+      default: ""
     },
     icon: {
       type: Boolean,
@@ -48,7 +48,7 @@ export default Vue.extend<Data, Methods, Computed, Props>({
   },
   computed: {
     formatHref() {
-      return this.to === null ? '#' : this.to;
+      return this.to === null ? "#" : this.to;
     }
   }
 });

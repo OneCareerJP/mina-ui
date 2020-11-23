@@ -19,14 +19,14 @@
 </template>
 
 <script lang="ts">
-import Vue from 'vue';
-import { Props, Data, Computed, Methods } from './types';
+import Vue from "vue";
+import { Props, Data, Computed, Methods } from "./types";
 export default Vue.extend<Data, Methods, Computed, Props>({
-  name: 'MModal',
+  name: "MModal",
   props: {
     size: {
       type: String,
-      default: '100%'
+      default: "100%"
     },
     customStyle: {
       type: Object,
@@ -43,7 +43,7 @@ export default Vue.extend<Data, Methods, Computed, Props>({
   },
   methods: {
     onCloseModal() {
-      this.$emit('close');
+      this.$emit("close");
     }
   }
 });

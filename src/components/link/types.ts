@@ -6,5 +6,7 @@ export interface Props {
   icon: boolean;
 }
 export interface Data {}
-export interface Computed {}
+export interface Computed {
+  formatHref: string;
+}
 export interface Methods {}

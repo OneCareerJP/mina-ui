@@ -16,10 +16,10 @@
 </template>
 
 <script lang="ts">
-import Vue from 'vue';
-import { Props, Data, Computed, Methods } from './types';
+import Vue from "vue";
+import { Props, Data, Computed, Methods } from "./types";
 export default Vue.extend<Props, Data, Computed, Methods>({
-  name: 'MCheckbox',
+  name: "MCheckbox",
   inheritAttrs: false,
   props: {
     checked: {
@@ -36,13 +36,13 @@ export default Vue.extend<Props, Data, Computed, Methods>({
     },
     name: {
       type: String,
-      default: ''
+      default: ""
     }
   },
   computed: {
     isChecked() {
-      if (typeof this.checked === 'boolean') return this.checked;
-      if (typeof this.checked === 'function') return this.checked();
+      if (typeof this.checked === "boolean") return this.checked;
+      if (typeof this.checked === "function") return this.checked();
       return false;
     },
     listeners() {
@@ -68,7 +68,7 @@ export default Vue.extend<Props, Data, Computed, Methods>({
       border: 2px solid $mina-sky-lighter;
       border-radius: 4px;
       box-sizing: border-box;
-      content: '';
+      content: "";
       display: block;
       height: 21px;
       width: 21px;
@@ -94,7 +94,7 @@ export default Vue.extend<Props, Data, Computed, Methods>({
     }
 
     &::after {
-      content: '';
+      content: "";
       display: block;
       height: 10px;
       width: 5px;

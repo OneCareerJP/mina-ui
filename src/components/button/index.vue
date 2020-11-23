@@ -23,56 +23,57 @@
 </template>
 
 <script lang="ts">
-import Vue from 'vue';
-import MIcon from '@/components/icon/index.vue';
-import { Props, Data, Computed, Methods } from './types';
+import Vue from "vue";
+import MIcon from "../icon/index.vue";
+import { Props, Data, Computed, Methods } from "./types";
+
 export default Vue.extend<Props, Data, Computed, Methods>({
-  name: 'MButton',
+  name: "MButton",
   components: {
     MIcon
   },
   props: {
     size: {
       type: String,
-      default: 'medium',
+      default: "medium",
       validator(size: string) {
-        return ['', 'small', 'medium', 'large'].includes(size);
+        return ["", "small", "medium", "large"].includes(size);
       }
     },
     maxWidth: {
       type: String,
-      default: ''
+      default: ""
     },
     minWidth: {
       type: String,
-      default: ''
+      default: ""
     },
     height: {
       type: String,
-      default: ''
+      default: ""
     },
     type: {
       type: String,
-      default: 'standard',
+      default: "standard",
       validator(type: string) {
-        return ['primary', 'standard'].includes(type);
+        return ["primary", "standard"].includes(type);
       }
     },
     iconType: {
       type: String,
-      default: 'fas'
+      default: "fas"
     },
     iconName: {
       type: String,
-      default: ''
+      default: ""
     },
     iconSize: {
       type: String,
-      default: ''
+      default: ""
     },
     iconColor: {
       type: String,
-      default: ''
+      default: ""
     },
     icon: {
       type: Boolean,
@@ -90,8 +91,8 @@ export default Vue.extend<Props, Data, Computed, Methods>({
   computed: {
     buttonStyle() {
       const style = {
-        'max-width': this.maxWidth,
-        'min-width': this.minWidth,
+        "max-width": this.maxWidth,
+        "min-width": this.minWidth,
         height: this.height
       };
       return this.customStyle ? { ...style, ...this.customStyle } : style;
