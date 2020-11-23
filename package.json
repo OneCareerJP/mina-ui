@@ -1,7 +1,9 @@
 {
   "name": "mina-ui",
   "version": "0.1.0",
+  "description": "mina-ui is a component library for Vue.js(v2.6)",
   "private": true,
+  "main": "dist/mina-ui.common.js",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build --target lib --name mina-ui src/main.ts",
