@@ -10,7 +10,7 @@ module.exports = ({ config }) => {
       {
         loader: 'sass-loader',
         options: {
-          prependData: '@import "./src/assets/scss/app.scss";'
+          prependData: '@import "./src/assets/scss/prepends.scss";'
         }
       }
     ]
