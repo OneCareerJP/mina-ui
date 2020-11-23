@@ -36,10 +36,10 @@
 </template>
 
 <script lang="ts">
-import Vue from 'vue';
-import { Data, Methods, Computed, Props } from './types';
-import MIcon from '@/components/icon/index.vue';
-import ClickOutside from 'vue-click-outside';
+import Vue from "vue";
+import { Data, Methods, Computed, Props } from "./types";
+import MIcon from "@/components/icon/index.vue";
+import ClickOutside from "vue-click-outside";
 
 const KEYCODE = {
   ARROW_UP: 38,
@@ -48,7 +48,7 @@ const KEYCODE = {
 };
 
 export default Vue.extend<Data, Methods, Computed, Props>({
-  name: 'MSelectbox',
+  name: "MSelectbox",
   components: {
     MIcon
   },
@@ -58,15 +58,15 @@ export default Vue.extend<Data, Methods, Computed, Props>({
   props: {
     placeholder: {
       type: String,
-      default: ''
+      default: ""
     },
     initialSelectedValue: {
       type: [String, Number],
-      default: ''
+      default: ""
     },
     selectedValue: {
       type: [String, Number],
-      default: ''
+      default: ""
     },
     selectList: {
       type: Array,
@@ -74,7 +74,7 @@ export default Vue.extend<Data, Methods, Computed, Props>({
     },
     itemText: {
       type: String,
-      default: ''
+      default: ""
     }
   },
   data() {
@@ -84,12 +84,12 @@ export default Vue.extend<Data, Methods, Computed, Props>({
   },
   computed: {
     setSelectedValue() {
-      return this.selectedValue === '' || this.selectedValue === 0
+      return this.selectedValue === "" || this.selectedValue === 0
         ? this.initialSelectedValue
         : this.selectedValue;
     },
     buttonElements() {
-      return this.$refs.button;
+      return this.$refs.button as HTMLButtonElement[];
     }
   },
   methods: {
@@ -107,10 +107,10 @@ export default Vue.extend<Data, Methods, Computed, Props>({
     },
     keydownSelectValue(event) {
       if (event.keyCode === KEYCODE.ARROW_DOWN) {
-        this.moveNext();
+        this.moveNext(event);
         event.preventDefault();
       } else if (event.keyCode === KEYCODE.ARROW_UP) {
-        this.movePrev();
+        this.movePrev(event);
         event.preventDefault();
       } else if (event.keyCode === KEYCODE.TAB) {
         this.closeSelectList();
@@ -124,26 +124,28 @@ export default Vue.extend<Data, Methods, Computed, Props>({
         this.buttonElements[index].focus();
       }
     },
-    moveNext() {
+    moveNext(event) {
       const index = this.findIndex(event.target);
       this.moveFocus(index + 1);
     },
-    movePrev() {
+    movePrev(event) {
       const index = this.findIndex(event.target);
       this.moveFocus(index - 1);
     },
     focusButtonElements() {
       const findIndexSelected = this.selectList.findIndex(
         item =>
-          item === this.setSelectedValue ||
-          item[this.itemText] === this.setSelectedValue
+          item ===
+          this
+            .setSelectedValue /* ||
+          item[this.itemText] === this.setSelectedValue */
       );
       this.$nextTick(() => {
         if (findIndexSelected >= 0) {
-          event.preventDefault();
+          // event.preventDefault();
           this.buttonElements[findIndexSelected].focus();
         } else {
-          event.preventDefault();
+          // event.preventDefault();
           this.buttonElements[0].focus();
         }
       });
@@ -153,7 +155,7 @@ export default Vue.extend<Data, Methods, Computed, Props>({
     },
     changeSelectValue(item) {
       this.closeSelectList();
-      this.$emit('click', item);
+      this.$emit("click", item);
     }
   }
 });

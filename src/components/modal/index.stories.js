@@ -1,8 +1,8 @@
-import MModal from '@/components/modal/index.vue';
-import MButton from '@/components/button/index.vue';
+import MModal from "@/components/modal/index.vue";
+import MButton from "@/components/button/index.vue";
 
 export default {
-  title: 'Modal',
+  title: "Modal",
   component: MModal,
   argTypes: {}
 };
@@ -44,5 +44,5 @@ const Template = (args, { argTypes }) => ({
 
 export const Default = Template.bind({});
 Default.args = {
-  size: '80%'
+  size: "80%"
 };

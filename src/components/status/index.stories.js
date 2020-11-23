@@ -1,11 +1,11 @@
-import MStatus from './index.vue';
+import MStatus from "./index.vue";
 
 export default {
-  title: 'Status',
+  title: "Status",
   component: MStatus,
   argTypes: {
     type: {
-      control: { type: 'select', options: ['square', 'circle'] }
+      control: { type: "select", options: ["square", "circle"] }
     }
   }
 };
@@ -18,12 +18,12 @@ const Template = (args, { argTypes }) => ({
 
 export const Square = Template.bind({});
 Square.args = {
-  label: 'Label Text',
-  type: 'square'
+  label: "Label Text",
+  type: "square"
 };
 
 export const Circle = Template.bind({});
 Circle.args = {
-  label: 'Label Text',
-  type: 'circle'
+  label: "Label Text",
+  type: "circle"
 };

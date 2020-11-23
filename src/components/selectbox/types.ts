@@ -10,16 +10,16 @@ export interface Data {
 }
 export interface Computed {
   setSelectedValue: string | number;
-  buttonElements: string[];
+  buttonElements: HTMLButtonElement[];
 }
 export interface Methods {
   clickSelectbox: () => void;
   keydownSelectbox: (event: KeyboardEvent) => void;
   keydownSelectValue: (event: KeyboardEvent) => void;
   moveFocus: (index: number) => void;
-  moveNext: () => void;
-  movePrev: () => void;
-  findIndex: (target: HTMLButtonElement) => void;
+  moveNext: (event: KeyboardEvent) => void;
+  movePrev: (event: KeyboardEvent) => void;
+  findIndex: (target: EventTarget | null) => number;
   focusButtonElements: () => void;
   closeSelectList: () => void;
   changeSelectValue: (value: string) => void;
