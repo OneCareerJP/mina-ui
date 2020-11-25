@@ -1,7 +1,7 @@
 import MCheckbox from "./index.vue";
 
 export default {
-  title: "Checkbox",
+  title: "Components/Checkbox",
   component: MCheckbox,
   argTypes: {}
 };

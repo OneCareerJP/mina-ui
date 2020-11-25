@@ -1,7 +1,7 @@
 import MIcon from "./index.vue";
 
 export default {
-  title: "Icon",
+  title: "Components/Icon",
   component: MIcon,
   argTypes: {
     color: { control: "color" },

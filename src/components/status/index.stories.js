@@ -1,7 +1,7 @@
 import MStatus from "./index.vue";
 
 export default {
-  title: "Status",
+  title: "Components/Status",
   component: MStatus,
   argTypes: {
     type: {
