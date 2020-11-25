@@ -21,9 +21,9 @@
     "vue-click-outside": "^1.1.0"
   },
   "devDependencies": {
-    "@storybook/addon-essentials": "^6.0.26",
-    "@storybook/addon-links": "^6.0.26",
-    "@storybook/vue": "^6.0.26",
+    "@storybook/addon-essentials": "^6.1.6",
+    "@storybook/addon-links": "^6.1.6",
+    "@storybook/vue": "^6.1.6",
     "@types/jest": "^24.0.19",
     "@typescript-eslint/eslint-plugin": "^2.33.0",
     "@typescript-eslint/parser": "^2.33.0",
