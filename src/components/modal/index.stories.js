@@ -2,7 +2,7 @@ import MModal from "@/components/modal/main.vue";
 import MButton from "@/components/button/main.vue";
 
 export default {
-  title: "Modal",
+  title: "Components/Modal",
   component: MModal,
   argTypes: {}
 };

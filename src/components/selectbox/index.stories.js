@@ -1,7 +1,7 @@
 import MSelectbox from "./main.vue";
 
 export default {
-  title: "Selectbox",
+  title: "Components/Selectbox",
   component: MSelectbox,
   argTypes: {}
 };

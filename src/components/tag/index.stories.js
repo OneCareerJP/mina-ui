@@ -1,7 +1,7 @@
 import MTag from "./main.vue";
 
 export default {
-  title: "Tag",
+  title: "Components/Tag",
   component: MTag,
   argTypes: {
     type: {
