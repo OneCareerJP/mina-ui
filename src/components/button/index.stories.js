@@ -2,7 +2,7 @@ import MButton from "./index.vue";
 import { action } from "@storybook/addon-actions";
 
 export default {
-  title: "Button",
+  title: "Components/Button",
   component: MButton,
   argTypes: {
     /* sampleとして置いておきます */
