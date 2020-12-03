@@ -2,7 +2,7 @@
   <transition name="modal">
     <div class="m-modal">
       <div class="m-modal__wrapper" @click.self="onCloseModal">
-        <article class="m-modal__container" :style="containerSize">
+        <MPanel class="m-modal__container" outlined rounded :width="size">
           <section class="m-modal__header">
             <slot name="header" />
           </section>
@@ -12,7 +12,7 @@
           <section class="m-modal__footer">
             <slot name="footer" />
           </section>
-        </article>
+        </MPanel>
       </div>
     </div>
   </transition>
@@ -21,8 +21,18 @@
 <script lang="ts">
 import Vue from "vue";
 import { Props, Data, Computed, Methods } from "./types";
+import { MPanel } from "../panel";
+import {
+  disableBodyScroll,
+  enableBodyScroll,
+  clearAllBodyScrollLocks
+} from "body-scroll-lock";
+
 export default Vue.extend<Data, Methods, Computed, Props>({
   name: "MModal",
+  components: {
+    MPanel
+  },
   props: {
     size: {
       type: String,
@@ -33,23 +43,28 @@ export default Vue.extend<Data, Methods, Computed, Props>({
       default: null
     }
   },
-  computed: {
-    containerSize() {
-      const style = {
-        width: this.size
-      };
-      return this.customStyle ? { ...style, ...this.customStyle } : style;
-    }
+  data() {
+    return {
+      targetElement: null
+    };
+  },
+  mounted() {
+    this.targetElement = document.getElementsByClassName("m-modal")[0];
+    disableBodyScroll(this.targetElement as Element);
+  },
+  beforeDestroy() {
+    clearAllBodyScrollLocks();
   },
   methods: {
     onCloseModal() {
+      enableBodyScroll(this.targetElement as Element);
       this.$emit("close");
     }
   }
 });
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .m-modal {
   position: fixed;
   top: 0;
@@ -58,7 +73,7 @@ export default Vue.extend<Data, Methods, Computed, Props>({
   display: table;
   width: 100%;
   height: 100%;
-  background-color: rgba($color: #000, $alpha: 0.5);
+  background-color: rgba($color: $mina-black, $alpha: 0.5);
   transition: opacity 0.1s ease-in-out;
 
   &__wrapper {
@@ -69,10 +84,7 @@ export default Vue.extend<Data, Methods, Computed, Props>({
   &__container {
     position: relative;
     margin: 0 auto;
-    padding: 1.2em;
-    background-color: #fff;
-    border-radius: 16px;
-    box-shadow: 0 2px 8px rgba($color: #000, $alpha: 0.33);
+    padding: 40px 32px;
     transition: all 0.1s ease;
   }
 
@@ -87,11 +99,13 @@ export default Vue.extend<Data, Methods, Computed, Props>({
   }
 
   &__body {
-    margin: 16px 0 0 0;
+    margin: 40px 0 0 0;
+    max-height: calc(85vh - 157px);
+    overflow-y: auto;
   }
 
   &__footer {
-    margin: 16px 0 0 0;
+    margin: 40px 0 0 0;
   }
 }
 
