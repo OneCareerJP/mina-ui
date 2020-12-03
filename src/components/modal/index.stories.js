@@ -22,7 +22,7 @@ const Template = (args, { argTypes }) => ({
       <template v-slot:footer>
         <div style="display: flex; justify-content: space-between; align-items: center;">
           <p>ModalFooter</p>
-          <MButton type="white" max-width="200px" @click="closeModal">CloseModal</MButton>
+          <MButton type="standard" max-width="200px" @click="closeModal">CloseModal</MButton>
         </div>
       </template>
     </MModal>
