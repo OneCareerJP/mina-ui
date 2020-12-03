@@ -151,13 +151,6 @@ export default Vue.extend<Props, Data, Computed, Methods>({
     }
   }
 
-  /* TODO:回答来たら修正する */
-  &--social {
-    background: #4285f4;
-    color: $mina-white;
-    border: 1px solid #4285f4;
-  }
-
   &--standard {
     background: linear-gradient(
       180deg,

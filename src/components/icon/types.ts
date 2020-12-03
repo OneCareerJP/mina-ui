@@ -4,6 +4,7 @@ export interface Props {
   iconName: string;
   size: string;
   color: string;
+  customColor: string;
   innerClass: string;
   customStyle: object;
 }
