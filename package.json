@@ -16,6 +16,8 @@
     "@fortawesome/fontawesome-svg-core": "^1.2.32",
     "@fortawesome/free-solid-svg-icons": "^5.15.1",
     "@fortawesome/vue-fontawesome": "2",
+    "@types/body-scroll-lock": "^2.6.1",
+    "body-scroll-lock": "^3.1.5",
     "core-js": "^3.6.5",
     "vue": "^2.6.11",
     "vue-click-outside": "^1.1.0"
