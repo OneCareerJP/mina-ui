@@ -1,4 +1,4 @@
-import MSelectbox from "./index.vue";
+import MSelectbox from "./main.vue";
 
 export default {
   title: "Selectbox",

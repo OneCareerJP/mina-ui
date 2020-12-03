@@ -1,3 +1,3 @@
-import MStatus from "./index.vue";
+import MStatus from "./main.vue";
 
 export { MStatus };

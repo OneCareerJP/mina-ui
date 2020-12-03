@@ -1,3 +1,3 @@
-import MCheckbox from "./index.vue";
+import MCheckbox from "./main.vue";
 
 export { MCheckbox };

@@ -1,3 +1,3 @@
-import MModal from "./index.vue";
+import MModal from "./main.vue";
 
 export { MModal };

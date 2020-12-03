@@ -1,4 +1,4 @@
-import MStatus from "./index.vue";
+import MStatus from "./main.vue";
 
 export default {
   title: "Status",

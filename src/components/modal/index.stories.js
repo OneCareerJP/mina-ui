@@ -1,5 +1,5 @@
-import MModal from "@/components/modal/index.vue";
-import MButton from "@/components/button/index.vue";
+import MModal from "@/components/modal/main.vue";
+import MButton from "@/components/button/main.vue";
 
 export default {
   title: "Modal",

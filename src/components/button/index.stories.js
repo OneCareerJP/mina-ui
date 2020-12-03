@@ -1,4 +1,4 @@
-import MButton from "./index.vue";
+import MButton from "./main.vue";
 import { action } from "@storybook/addon-actions";
 
 export default {

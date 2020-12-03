@@ -1,3 +1,3 @@
-import MButton from "./index.vue";
+import MButton from "./main.vue";
 
 export { MButton };
