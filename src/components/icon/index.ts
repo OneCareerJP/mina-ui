@@ -1,3 +1,3 @@
-import MIcon from "./index.vue";
+import MIcon from "./main.vue";
 
 export { MIcon };

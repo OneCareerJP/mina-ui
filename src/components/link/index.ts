@@ -1,3 +1,3 @@
-import MLink from "./index.vue";
+import MLink from "./main.vue";
 
 export { MLink };

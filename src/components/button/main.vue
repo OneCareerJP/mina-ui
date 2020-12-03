@@ -24,7 +24,7 @@
 
 <script lang="ts">
 import Vue from "vue";
-import MIcon from "../icon/index.vue";
+import MIcon from "../icon/main.vue";
 import { Props, Data, Computed, Methods } from "./types";
 
 export default Vue.extend<Props, Data, Computed, Methods>({

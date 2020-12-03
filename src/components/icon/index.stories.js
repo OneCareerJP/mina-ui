@@ -1,4 +1,4 @@
-import MIcon from "./index.vue";
+import MIcon from "./main.vue";
 
 export default {
   title: "Icon",
