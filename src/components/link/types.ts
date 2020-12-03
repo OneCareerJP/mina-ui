@@ -4,6 +4,8 @@ export interface Props {
   to: string | null;
   color: string;
   icon: boolean;
+  bold: boolean;
+
 }
 export interface Data {}
 export interface Computed {

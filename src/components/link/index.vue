@@ -1,7 +1,11 @@
 <template>
   <router-link
     class="m-link"
-    :class="[color ? `m-link--${color}` : '', type ? `m-link-${type}` : '']"
+    :class="[
+      color ? `m-link__color--${color}` : '',
+      type ? `m-link-${type}` : ''
+    ]"
+    :style="bold ? { 'font-weight': 'bold' } : ''"
     :to="formatHref"
   >
     <slot />
@@ -44,6 +48,10 @@ export default Vue.extend<Data, Methods, Computed, Props>({
     icon: {
       type: Boolean,
       default: false
+    },
+    bold: {
+      type: Boolean,
+      default: false
     }
   },
   computed: {
@@ -58,19 +66,20 @@ export default Vue.extend<Data, Methods, Computed, Props>({
 .m-link {
   font-size: 14px;
   text-decoration: none;
-  &--denim-light {
-    color: $mina-denim-light;
-  }
-  &--ink {
-    color: $mina-ink;
-  }
-  &--ink-light {
-    color: $mina-ink-light;
-    text-decoration: underline;
-  }
-
-  &:hover {
-    color: $mina-denim;
+  &__color {
+    &--denim-light {
+      color: $mina-denim-light;
+    }
+    &--ink {
+      color: $mina-ink;
+    }
+    &--ink-light {
+      color: $mina-ink-light;
+      text-decoration: underline;
+    }
+    &:hover {
+      color: $mina-denim;
+    }
   }
 }
 .m-link-solo {

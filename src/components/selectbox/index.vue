@@ -12,7 +12,7 @@
         @keydown="keydownSelectbox"
       />
       <div class="m-selectbox__icon">
-        <MIcon icon icon-name="angle-down" color="#637381" />
+        <MIcon icon icon-name="angle-down" color="ink-lighter" />
       </div>
     </div>
     <div v-show="showSelectList" class="m-selectbox__list">
@@ -142,10 +142,8 @@ export default Vue.extend<Data, Methods, Computed, Props>({
       );
       this.$nextTick(() => {
         if (findIndexSelected >= 0) {
-          // event.preventDefault();
           this.buttonElements[findIndexSelected].focus();
         } else {
-          // event.preventDefault();
           this.buttonElements[0].focus();
         }
       });
@@ -164,6 +162,7 @@ export default Vue.extend<Data, Methods, Computed, Props>({
 <style lang="scss" scoped>
 .m-selectbox {
   position: relative;
+  width: 100%;
 
   &__form {
     display: flex;

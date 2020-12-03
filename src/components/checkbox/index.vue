@@ -65,7 +65,7 @@ export default Vue.extend<Props, Data, Computed, Methods>({
     cursor: pointer;
 
     &::before {
-      border: 2px solid $mina-sky-lighter;
+      background: $mina-sky-light;
       border-radius: 4px;
       box-sizing: border-box;
       content: "";

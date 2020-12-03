@@ -17,7 +17,10 @@ export default Vue.extend<Props, Data, Computed, Methods>({
   props: {
     type: {
       type: String,
-      default: ""
+      default: "",
+      validator(type: string) {
+        return ["", "circle", "square"].includes(type);
+      }
     },
     label: {
       type: String,
@@ -51,6 +54,7 @@ export default Vue.extend<Props, Data, Computed, Methods>({
 
     &--active {
       background: $mina-indigo-lighter;
+      border: none;
     }
   }
 

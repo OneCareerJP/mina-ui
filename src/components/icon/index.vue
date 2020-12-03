@@ -2,7 +2,7 @@
   <FontAwesomeLayers class="m-icon__layers">
     <FontAwesomeIcon
       class="m-icon__icon"
-      :class="innerClass"
+      :class="[innerClass, color ? `m-icon__color--${color}` : '']"
       :icon="[iconType, iconName]"
       :style="iconStyle"
     />
@@ -63,7 +63,16 @@ export default Vue.extend<Props, Data, Computed, Methods>({
           "search",
           "square",
           "check-square",
-          "eye"
+          "eye",
+          "check-square",
+          "check-circle",
+          "check-double",
+          "search",
+          "square",
+          "check-square",
+          "eye",
+          "lightbulb",
+          "trash-alt"
         ].includes(iconName);
       }
     },
@@ -72,6 +81,10 @@ export default Vue.extend<Props, Data, Computed, Methods>({
       default: ""
     },
     color: {
+      type: String,
+      default: ""
+    },
+    customColor: {
       type: String,
       default: ""
     },
@@ -88,7 +101,7 @@ export default Vue.extend<Props, Data, Computed, Methods>({
     iconStyle() {
       const style = {
         "font-size": this.size,
-        "--color": this.color
+        color: this.customColor
       };
       return this.customStyle ? { ...style, ...this.customStyle } : style;
     }
@@ -97,7 +110,7 @@ export default Vue.extend<Props, Data, Computed, Methods>({
 </script>
 
 <style lang="scss" scoped>
-/* 初期値を無効化 */
+/* NOTE: disable default values */
 .fa-layers svg.svg-inline--fa {
   bottom: inherit;
   left: inherit;
@@ -106,8 +119,22 @@ export default Vue.extend<Props, Data, Computed, Methods>({
   top: inherit;
 }
 .m-icon {
-  &__icon {
-    color: var(--color);
+  &__color {
+    &--indigo-light {
+      color: $mina-indigo-light;
+    }
+    &--denim-light {
+      color: $mina-denim-light;
+    }
+    &--ink-light {
+      color: $mina-ink-light;
+    }
+    &--ink-lighter {
+      color: $mina-ink-lighter;
+    }
+    &--green {
+      color: $mina-green;
+    }
   }
 }
 </style>
