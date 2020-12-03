@@ -13,7 +13,7 @@
 import Vue from "vue";
 import { Props, Data, Computed, Methods } from "./types";
 export default Vue.extend<Props, Data, Computed, Methods>({
-  name: "MStatus",
+  name: "MTag",
   props: {
     type: {
       type: String,

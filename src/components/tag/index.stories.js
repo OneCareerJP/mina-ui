@@ -1,8 +1,8 @@
-import MStatus from "./main.vue";
+import MTag from "./main.vue";
 
 export default {
-  title: "Status",
-  component: MStatus,
+  title: "Tag",
+  component: MTag,
   argTypes: {
     type: {
       control: { type: "select", options: ["square", "circle"] }
@@ -12,8 +12,8 @@ export default {
 
 const Template = (args, { argTypes }) => ({
   props: Object.keys(argTypes),
-  components: { MStatus },
-  template: `<MStatus v-bind="$props" />`
+  components: { MTag },
+  template: `<MTag v-bind="$props" />`
 });
 
 export const Square = Template.bind({});
