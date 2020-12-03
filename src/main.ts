@@ -5,18 +5,10 @@ import { MIcon } from "./components/icon";
 import { MLink } from "./components/link";
 import { MModal } from "./components/modal";
 import { MSelectbox } from "./components/selectbox";
-import { MStatus } from "./components/status";
+import { MTag } from "./components/tag";
 import "./assets/scss/main.scss";
 
-const components = [
-  MButton,
-  MCheckbox,
-  MIcon,
-  MLink,
-  MModal,
-  MSelectbox,
-  MStatus
-];
+const components = [MButton, MCheckbox, MIcon, MLink, MModal, MSelectbox, MTag];
 
 const install = function(Vue: VueConstructor) {
   components.forEach(component => {
@@ -34,5 +26,5 @@ export default {
   MLink,
   MModal,
   MSelectbox,
-  MStatus
+  MTag
 };
