@@ -1,7 +1,7 @@
 import MPanel from "./main.vue";
 
 export default {
-  title: "Panel",
+  title: "Components/Panel",
   component: MPanel,
   argTypes: {
     rounded: {
