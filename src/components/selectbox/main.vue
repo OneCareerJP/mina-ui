@@ -153,7 +153,7 @@ export default Vue.extend<Data, Methods, Computed, Props>({
     },
     changeSelectValue(item) {
       this.closeSelectList();
-      this.$emit("click", item);
+      this.$emit("change", item);
     }
   }
 });
