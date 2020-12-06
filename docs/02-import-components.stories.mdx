@@ -9,7 +9,7 @@
 
 import Vue from 'vue';
 import MinaUi from 'mina-ui';
-import 'mina/dist/mina-ui.css';
+import 'mina-ui/dist/mina-ui.css';
 
 Vue.use(MinaUi);
 ```
@@ -21,10 +21,10 @@ Vue.use(MinaUi);
 
 import Vue from 'vue';
 import { MButton, MSelectbox } from 'mina-ui';
-import 'mina/dist/mina-ui.css';
+import 'mina-ui/dist/mina-ui.css';
 
-Vue.use(MButton);
-Vue.use(MSelectbox);
+Vue.component(MButton.name, MButton);
+Vue.component(MSelectbox.name, MSelectbox);
 
 new Vue({
   el: '#app',
