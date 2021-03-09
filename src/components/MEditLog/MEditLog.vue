@@ -22,9 +22,9 @@
 <script lang="ts">
 import Vue from 'vue';
 import { Data, Methods, Computed, Props } from './types';
-import MIcon from '../MIcon/MIcon.vue';
-import MBody from '../MTypography/MBody/MBody.vue';
-import MLabel from '../MTypography/MLabel/MLabel.vue';
+import MIcon from '@/components/MIcon/MIcon.vue';
+import MBody from '@/components/MTypography/MBody/MBody.vue';
+import MLabel from '@/components/MTypography/MLabel/MLabel.vue';
 import dayjs from 'dayjs';
 
 export default Vue.extend<Data, Methods, Computed, Props>({

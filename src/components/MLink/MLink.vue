@@ -31,7 +31,7 @@
 <script lang="ts">
 import Vue from 'vue';
 import { Data, Methods, Computed, Props } from './types';
-import MIcon from '../MIcon/MIcon.vue';
+import MIcon from '@/components/MIcon/MIcon.vue';
 
 export default Vue.extend<Data, Methods, Computed, Props>({
   name: 'MLink',

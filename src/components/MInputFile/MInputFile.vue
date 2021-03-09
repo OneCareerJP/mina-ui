@@ -85,10 +85,10 @@
 <script lang="ts">
 import Vue from 'vue';
 import { Data, Methods, Computed, Props } from './types';
-import MButton from '../MButton/MButton.vue';
-import MLabel from '../MTypography/MLabel/MLabel.vue';
-import MImage from '../MImage/MImage.vue';
-import MIcon from '../MIcon/MIcon.vue';
+import MButton from '@/components/MButton/MButton.vue';
+import MLabel from '@/components/MTypography/MLabel/MLabel.vue';
+import MImage from '@/components/MImage/MImage.vue';
+import MIcon from '@/components/MIcon/MIcon.vue';
 
 export default Vue.extend<Data, Methods, Computed, Props>({
   components: {

@@ -16,7 +16,7 @@
 <script lang="ts">
 import Vue from 'vue';
 import { Props, Data, Computed, Methods } from './types';
-import MButton from '../MButton/MButton.vue';
+import MButton from '@/components/MButton/MButton.vue';
 
 export default Vue.extend<Data, Methods, Computed, Props>({
   name: 'MPageTop',

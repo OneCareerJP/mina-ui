@@ -24,7 +24,7 @@
 
 <script lang="ts">
 import Vue from 'vue';
-import MIcon from '../MIcon/MIcon.vue';
+import MIcon from '@/components/MIcon/MIcon.vue';
 import { Data, Methods, Computed, Props } from './types';
 export default Vue.extend<Data, Methods, Computed, Props>({
   name: 'MButton',

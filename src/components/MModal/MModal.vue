@@ -21,7 +21,7 @@
 <script lang="ts">
 import Vue from 'vue';
 import { Props, Data, Computed, Methods } from './types';
-import MPanel from '../MPanel/MPanel.vue';
+import MPanel from '@/components/MPanel/MPanel.vue';
 import {
   disableBodyScroll,
   enableBodyScroll,

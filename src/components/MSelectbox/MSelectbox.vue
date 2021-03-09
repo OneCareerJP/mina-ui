@@ -45,8 +45,8 @@
 <script lang="ts">
 import Vue from 'vue';
 import { Data, Methods, Computed, Props } from './types';
-import MIcon from '../MIcon/MIcon.vue';
-import MInputText from '../MInputText/MInputText.vue';
+import MIcon from '@/components/MIcon/MIcon.vue';
+import MInputText from '@/components/MInputText/MInputText.vue';
 import ClickOutside from 'vue-click-outside';
 
 const KEYCODE = {

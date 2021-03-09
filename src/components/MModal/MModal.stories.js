@@ -1,5 +1,5 @@
 import MModal from './MModal.vue';
-import MButton from '../MButton/MButton.vue';
+import MButton from '@/components/MButton/MButton.vue';
 
 export default {
   title: 'UI/MModal',
