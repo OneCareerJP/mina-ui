@@ -1,37 +1,39 @@
-// Mina Skys
-// -------------------------
+/* Primary Color */
+$mina-denim: #163f79;
+$mina-denim-light: #2363be;
 
+/* /* Secondary Color */
+$mina-indigo: #385080;
+$mina-indigo-light: #6380bb;
+$mina-indigo-lighter: #aabada;
+
+/* Base Color */
 $mina-sky: #c4cdd5;
 $mina-sky-light: #dfe3e8;
 $mina-sky-lighter: #f4f6f8;
 
-// Other Mina colors
-// -------------------------
-
-$mina-indigo: #385080;
-$mina-denim: #163f79;
+/* Font Color */
 $mina-ink: #212b36;
-$mina-red: #de3618;
-$mina-salmon: #ee8282;
-$mina-yellow: #eec200;
-$mina-green: #50b83c;
-$mina-white: #ffffff;
-$mina-black: #000000;
-
-$mina-indigo-light: #6380bb;
-$mina-denim-light: #2363be;
 $mina-ink-light: #454f5b;
-$mina-red-light: #fead9a;
-$mina-salmon-light: #f8c9c9;
-$mina-yellow-light: #ffea8a;
-$mina-green-light: #bbe5b3;
-
-$mina-indigo-lighter: #aabada;
-$mina-denim-lighter: #ebf5fa;
 $mina-ink-lighter: #637381;
-$mina-red-lighter: #fbeae5;
-$mina-yellow-lighter: #fcf1cd;
+
+/* Accent Color */
+$mina-salmon: #ee8282;
+
+/* UI Color */
+$mina-green: #50b83c;
+$mina-green-light: #bbe5b3;
 $mina-green-lighter: #e3f1df;
+$mina-red: #de3618;
+$mina-red-light: #fead9a;
+$mina-red-lighter: #fbeae5;
+$mina-yellow: #eec200;
+$mina-yellow-light: #ffea8a;
+$mina-yellow-lighter: #fcf1cd;
+
+/* Other Color */
+$mina-white: #fff;
+$mina-black: #000;
 
 // Text colors
 // -------------------------
@@ -39,26 +41,38 @@ $mina-green-lighter: #e3f1df;
 $tx-black: $mina-ink;
 $tx-black-light: $mina-ink-light;
 $tx-black-lighter: $mina-ink-lighter;
+$tx-white: $mina-white;
 
-// UI colors
+// Font-size
 // -------------------------
 
-$primary: $mina-denim-light;
-$success: $mina-green;
-$warning: $mina-yellow;
-$danger: $mina-red;
+$font-xxxx-large: 26px;
+$font-xxx-large: 24px;
+$font-xx-large: 20px;
+$font-x-large: 18px;
+$font-large: 16px;
+$font-medium: 14px;
+$font-small: 13px;
+$font-x-small: 12px;
 
-// Links
-// -------------------------
+/* Paragraph */
+$paragraph-x-large: $font-xxx-large;
+$paragraph-large: $font-large;
+$paragraph-medium: $font-medium;
+$paragraph-small: $font-x-small;
 
-$link-color: $mina-denim-light !default;
+/* Label */
+$label-x-large: $font-x-large;
+$label-large: $font-medium;
+$label-medium: $font-small;
+$label-small: $font-x-small;
 
-// Width
-// -------------------------
+/* Link */
+$link-medium: $font-medium;
+$link-small: $font-small;
+$link-x-small: $font-x-small;
 
-$app-content-width: 1440px;
-
-// Height
-// -------------------------
-
-$global-header-height: 56px;
+/* Button */
+$Button-large: $font-medium;
+$Button-medium: $font-small;
+$Button-small: $font-x-small;

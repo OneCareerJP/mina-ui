@@ -1,0 +1,9 @@
+@mixin inputTextDiabled {
+  background: $mina-sky-light !important;
+  border: 1px solid $mina-sky !important;
+  box-shadow: 0 1px 3px rgba($color: $mina-indigo, $alpha: 0.04) $mina-indigo !important;
+
+  &:hover {
+    cursor: not-allowed;
+  }
+}
