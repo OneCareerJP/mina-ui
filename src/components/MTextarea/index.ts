@@ -1,3 +1,3 @@
-import MTextarea from './MIcon.vue';
+import MTextarea from './MTextarea.vue';
 
 export { MTextarea };

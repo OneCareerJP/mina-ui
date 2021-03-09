@@ -1,4 +1,9 @@
 import { VueConstructor } from 'vue';
+import { MAccordion } from './components/MAccordion';
+import { MButton } from './components/MButton';
+import { MCheckboxGroup, MCheckbox } from './components/MCheckboxGroup';
+import { MCommentLog } from './components/MCommentLog';
+import { MEditLog } from './components/MEditLog';
 import { MHeading } from './components/MHeading';
 import { MIcon } from './components/MIcon';
 import { MIframe } from './components/MIframe';
