@@ -1,7 +1,7 @@
 import MTable from './MTable.vue';
 
 export default {
-  title: 'Atom/MTable',
+  title: 'UI/MTable',
   component: MTable,
   argTypes: {}
 };

@@ -1,7 +1,7 @@
 import MPageTop from './MPageTop.vue';
 
 export default {
-  title: 'Atom/MPageTop',
+  title: 'UI/MPageTop',
   component: MPageTop,
   argTypes: {}
 };

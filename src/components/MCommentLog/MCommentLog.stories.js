@@ -1,7 +1,7 @@
 import MCommentLog from './MCommentLog.vue';
 
 export default {
-  title: 'Atom/MCommentLog',
+  title: 'UI/MCommentLog',
   component: MCommentLog,
   argTypes: {}
 };

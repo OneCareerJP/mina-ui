@@ -2,7 +2,7 @@ import MRadioGroup from './MRadioGroup.vue';
 import MRadio from './MRadio/MRadio.vue';
 
 export default {
-  title: 'Atom/MRadioGroup',
+  title: 'UI/MRadioGroup',
   component: MRadio,
   argTypes: {}
 };

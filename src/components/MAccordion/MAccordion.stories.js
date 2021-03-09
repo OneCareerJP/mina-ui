@@ -1,7 +1,7 @@
 import MAccordion from './MAccordion.vue';
 
 export default {
-  title: 'Atom/MAccordion',
+  title: 'UI/MAccordion',
   component: MAccordion,
   argTypes: {}
 };

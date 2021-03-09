@@ -1,7 +1,7 @@
 import MImage from './MImage.vue';
 
 export default {
-  title: 'Atom/MImage',
+  title: 'UI/MImage',
   component: MImage,
   argTypes: {}
 };

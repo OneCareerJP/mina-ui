@@ -1,7 +1,7 @@
 import MBody from './MBody.vue';
 
 export default {
-  title: 'Atom/MTypography/MBody',
+  title: 'UI/MTypography/MBody',
   component: MBody,
   argTypes: {
     bodySize: {

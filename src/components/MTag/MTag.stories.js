@@ -1,7 +1,7 @@
 import MTag from './MTag.vue';
 
 export default {
-  title: 'Atom/MTag',
+  title: 'UI/MTag',
   component: MTag,
   argTypes: {
     type: {

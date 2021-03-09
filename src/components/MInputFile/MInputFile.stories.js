@@ -1,7 +1,7 @@
 import MInputFile from './MInputFile.vue';
 
 export default {
-  title: 'Atom/MInputFile',
+  title: 'UI/MInputFile',
   component: MInputFile,
   argTypes: {}
 };

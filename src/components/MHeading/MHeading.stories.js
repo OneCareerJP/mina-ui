@@ -1,7 +1,7 @@
 import MHeading from './MHeading.vue';
 
 export default {
-  title: 'Atom/MHeading',
+  title: 'UI/MHeading',
   component: MHeading,
   argTypes: {
     level: {

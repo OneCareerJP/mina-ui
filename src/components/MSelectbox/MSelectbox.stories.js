@@ -1,7 +1,7 @@
 import MSelectbox from './MSelectbox.vue';
 
 export default {
-  title: 'Atom/MSelectbox',
+  title: 'UI/MSelectbox',
   component: MSelectbox,
   argTypes: {}
 };

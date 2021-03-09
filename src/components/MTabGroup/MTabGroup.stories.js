@@ -2,7 +2,7 @@ import MTabContent from './MTabContent/MTabContent.vue';
 import MTabs from './MTabs/MTabs.vue';
 
 export default {
-  title: 'Atom/MTabGroup',
+  title: 'UI/MTabGroup',
   components: { MTabs, MTabContent },
   argTypes: {}
 };

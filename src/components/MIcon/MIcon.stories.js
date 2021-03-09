@@ -1,7 +1,7 @@
 import MIcon from './MIcon.vue';
 
 export default {
-  title: 'Atom/MIcon',
+  title: 'UI/MIcon',
   component: MIcon,
   argTypes: {
     customColor: { control: 'color' },

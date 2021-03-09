@@ -1,7 +1,7 @@
 import MTextarea from './MTextarea.vue';
 
 export default {
-  title: 'Atom/MTextarea',
+  title: 'UI/MTextarea',
   component: MTextarea,
   argTypes: {}
 };

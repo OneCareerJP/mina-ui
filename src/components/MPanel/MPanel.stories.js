@@ -1,7 +1,7 @@
 import MPanel from './MPanel.vue';
 
 export default {
-  title: 'Atom/MPanel',
+  title: 'UI/MPanel',
   component: MPanel,
   argTypes: {
     rounded: {

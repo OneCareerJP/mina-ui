@@ -1,7 +1,7 @@
 import MEmphasis from './MEmphasis.vue';
 
 export default {
-  title: 'Atom/MTypography/MEmphasis',
+  title: 'UI/MTypography/MEmphasis',
   component: MEmphasis,
   argTypes: {}
 };

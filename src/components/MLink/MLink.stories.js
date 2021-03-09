@@ -1,7 +1,7 @@
 import MLink from './MLink.vue';
 
 export default {
-  title: 'Atom/MLink',
+  title: 'UI/MLink',
   component: MLink,
   argTypes: {
     type: {

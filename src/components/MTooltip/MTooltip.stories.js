@@ -5,7 +5,7 @@ import {
 } from '@/helpers/getPosition.ts';
 
 export default {
-  title: 'Atom/MTooltip',
+  title: 'UI/MTooltip',
   component: MTooltip,
   argTypes: {}
 };

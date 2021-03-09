@@ -1,7 +1,7 @@
 import MLabel from './MLabel.vue';
 
 export default {
-  title: 'Atom/MTypography/MLabel',
+  title: 'UI/MTypography/MLabel',
   component: MLabel,
   argTypes: {}
 };

@@ -2,7 +2,7 @@ import MModal from './MModal.vue';
 import MButton from '../MButton/MButton.vue';
 
 export default {
-  title: 'Atom/MModal',
+  title: 'UI/MModal',
   component: MModal,
   argTypes: {}
 };

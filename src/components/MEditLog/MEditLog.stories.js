@@ -1,7 +1,7 @@
 import MEditLog from './MEditLog.vue';
 
 export default {
-  title: 'Atom/MEditLog',
+  title: 'UI/MEditLog',
   component: MEditLog,
   argTypes: {}
 };

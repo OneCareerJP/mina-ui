@@ -1,7 +1,7 @@
 import MInputText from './MInputText.vue';
 
 export default {
-  title: 'Atom/MInputText',
+  title: 'UI/MInputText',
   component: MInputText,
   argTypes: {
     type: {
