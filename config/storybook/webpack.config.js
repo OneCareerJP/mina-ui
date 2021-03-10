@@ -3,7 +3,6 @@ const rootPath = path.resolve(__dirname, '../../src/');
 
 module.exports = {
   chainWebpack: config => {
-    console.log(rootPath);
     config.resolve.alias.set('@', rootPath);
     const svgRule = config.module.rule('svg');
     svgRule.uses.clear();
