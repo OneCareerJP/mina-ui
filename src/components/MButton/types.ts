@@ -10,6 +10,7 @@ export interface Props {
   iconColor: string;
   icon: boolean;
   disabled: boolean;
+  processing: boolean;
   customStyle: object;
 }
 export interface Data {}

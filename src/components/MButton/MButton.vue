@@ -7,18 +7,20 @@
       disabled ? `m-button--disabled` : ''
     ]"
     :style="buttonStyle"
-    :disabled="disabled"
+    :disabled="disabled || processing"
     v-on="listeners"
   >
-    <slot name="left" />
-    <MIcon
-      v-if="icon"
-      :icon-type="iconType"
-      :icon-name="iconName"
-      :size="iconSize"
-      :color="iconColor"
-    />
-    <slot />
+    <div :class="processing ? `m-button--processing` : ''">
+      <slot name="left" />
+      <MIcon
+        v-if="icon"
+        :icon-type="iconType"
+        :icon-name="iconName"
+        :size="iconSize"
+        :color="iconColor"
+      />
+      <slot />
+    </div>
   </button>
 </template>
 
@@ -84,6 +86,10 @@ export default Vue.extend<Data, Methods, Computed, Props>({
       type: Boolean,
       default: false
     },
+    processing: {
+      type: Boolean,
+      default: false
+    },
     customStyle: {
       type: Object,
       default: null
@@ -136,9 +142,52 @@ export default Vue.extend<Data, Methods, Computed, Props>({
     box-shadow: 0 1px 3px rgba($color: $mina-indigo, $alpha: 0.04) $mina-indigo !important;
     color: $mina-ink-lighter !important;
     font-weight: bold !important;
+  }
 
+  &:disabled {
     &:hover {
       cursor: not-allowed;
+    }
+  }
+
+  &--processing,
+  &--processing::after {
+    border-radius: 50%;
+    width: 10em;
+    height: auto;
+  }
+
+  &--processing {
+    font-size: 2px;
+    position: relative;
+    text-indent: -9999em;
+    margin: 0 auto;
+    border-top: 1.1em solid rgba($color: $mina-white, $alpha: 0.2) 0%;
+    border-right: 1.1em solid rgba($color: $mina-white, $alpha: 0.2) 0%;
+    border-bottom: 1.1em solid rgba($color: $mina-white, $alpha: 0.2) 0%;
+    border-left: 1.1em solid $mina-white;
+    transform: translateZ(0);
+    animation: load8 1.1s infinite linear;
+
+    @-webkit-keyframes load8 {
+      0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+      }
+      100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+      }
+    }
+    @keyframes load8 {
+      0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+      }
+      100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+      }
     }
   }
 
