@@ -27,6 +27,12 @@ import { MTooltip } from './components/MTooltip';
 import { MBody, MEmphasis, MLabel } from './components/MTypography';
 
 const components = [
+  MAccordion,
+  MButton,
+  MCheckbox,
+  MCheckboxGroup,
+  MCommentLog,
+  MEditLog,
   MHeading,
   MIcon,
   MIframe,
@@ -63,6 +69,12 @@ const install = function(Vue: VueConstructor) {
 
 export default {
   install,
+  MAccordion,
+  MButton,
+  MCheckbox,
+  MCheckboxGroup,
+  MCommentLog,
+  MEditLog,
   MHeading,
   MIcon,
   MIframe,
