@@ -11,6 +11,8 @@ export interface Props {
   height: string;
   width: string;
   imagePath: string;
+  imageWidth: string;
+  imageHeight: string;
   disabled: boolean;
   aspectRatio: {
     x: number;
@@ -32,6 +34,7 @@ export interface Computed {
   findFileImagePath: string;
   setlimitSize: number;
   inputFileStyle: object;
+  editable: boolean;
 }
 export interface Methods {
   setUploadFile: (event: any) => Promise<void>;

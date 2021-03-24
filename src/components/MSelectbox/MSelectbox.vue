@@ -4,7 +4,11 @@
     class="m-selectbox"
     :style="{ 'min-width': minWidth }"
   >
-    <div class="m-selectbox__form" @click="clickSelectbox">
+    <div
+      class="m-selectbox__form"
+      @keydown.space="clickSelectbox"
+      @click="clickSelectbox"
+    >
       <MInputText
         type="standard"
         readonly
@@ -29,6 +33,7 @@
         ref="button"
         class="m-selectbox__list-item"
         @click="changeSelectValue(item)"
+        @keydown.space="changeSelectValue(item)"
         @keydown="keydownSelectValue"
       >
         <template v-if="itemText === ''">
@@ -52,7 +57,8 @@ import ClickOutside from 'vue-click-outside';
 const KEYCODE = {
   ARROW_UP: 38,
   ARROW_DOWN: 40,
-  TAB: 9
+  TAB: 9,
+  SPACE: 32
 };
 
 export default Vue.extend<Data, Methods, Computed, Props>({
@@ -234,7 +240,7 @@ export default Vue.extend<Data, Methods, Computed, Props>({
     padding-left: 20px;
     background: none;
     border: none;
-    font-size: 12px;
+    font-size: $font-x-small;
     color: $mina-ink;
     cursor: pointer;
     outline: none;

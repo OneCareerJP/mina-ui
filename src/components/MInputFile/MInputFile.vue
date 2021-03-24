@@ -1,10 +1,13 @@
 <template>
   <div class="m-input-file" :style="inputFileStyle">
     <div
-      v-if="!files.length && !imagePath"
+      v-if="!files.length && !imagePath && !findFileImagePath"
       class="m-input-file__content"
       :style="inputFileStyle"
-      :class="[{ 'm-input-file__draging': isDrag }]"
+      :class="[
+        { 'm-input-file--disabled': disabled },
+        { 'm-input-file__draging': isDrag }
+      ]"
       @dragover.prevent="onDrag"
       @drop.prevent="dropFile"
       @dragleave.prevent="offDrag"
@@ -33,9 +36,9 @@
           :src="imagePath ? imagePath : findFileImagePath"
           alt="Source Image"
         />
-        <div v-if="croppedImage" class="m-input-file__preview-cropped-image">
-          <MImage :src="croppedImage" alt="Cropped Image" />
-        </div>
+      </div>
+      <div v-else-if="croppedImage" class="m-input-file__preview-cropped-image">
+        <MImage :src="croppedImage" alt="Cropped Image" />
       </div>
       <div v-else-if="findFileImagePath || imagePath">
         <div
@@ -46,7 +49,11 @@
           <MImage :src="findFileImagePath" alt="Upload Image" />
         </div>
         <div v-if="!findFileImagePath" class="m-input-file__preview-item">
-          <MImage :src="imagePath" alt="Load Image" />
+          <MImage
+            :src="imagePath"
+            alt="Load Image"
+            :style="{ width: imageWidth, height: imageHeight }"
+          />
         </div>
       </div>
       <div v-if="cropper" class="m-input-file__button-wrapper">
@@ -68,7 +75,12 @@
         v-else-if="files.length || imagePath"
         class="m-input-file__button-wrapper"
       >
-        <MButton max-width="200px" type="standard" @click="openCropper">
+        <MButton
+          v-if="editable"
+          max-width="200px"
+          type="standard"
+          @click="openCropper"
+        >
           画像を編集する
         </MButton>
         <div class="m-input-file__file-delete" @click="onPreviewClose">
@@ -146,6 +158,14 @@ export default Vue.extend<Data, Methods, Computed, Props>({
       type: String,
       default: undefined
     },
+    imageWidth: {
+      type: String,
+      default: undefined
+    },
+    imageHeight: {
+      type: String,
+      default: undefined
+    },
     disabled: {
       type: Boolean,
       default: false
@@ -191,6 +211,12 @@ export default Vue.extend<Data, Methods, Computed, Props>({
         height: this.height
       };
       return this.customStyle ? { ...style, ...this.customStyle } : style;
+    },
+    editable() {
+      return (
+        (!!this.imagePath && this.imagePath.indexOf('data:') !== -1) ||
+        !!this.findFileImagePath
+      );
     }
   },
   methods: {
@@ -275,6 +301,7 @@ export default Vue.extend<Data, Methods, Computed, Props>({
     },
     cropImage() {
       this.croppedImage = this.$refs.cropper.getCroppedCanvas().toDataURL();
+      this.closeCropper();
       this.$emit('crop', this.croppedImage);
     },
     resetCropPosition() {
@@ -353,6 +380,10 @@ export default Vue.extend<Data, Methods, Computed, Props>({
   &__preview-cropped-image {
     display: grid;
     place-content: center;
+  }
+
+  &--disabled {
+    @include inputTextDiabled;
   }
 }
 </style>
