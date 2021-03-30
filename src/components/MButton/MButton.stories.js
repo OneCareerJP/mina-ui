@@ -5,7 +5,6 @@ export default {
   title: 'UI/MButton',
   component: MButton,
   argTypes: {
-    /* sampleとして置いておきます */
     size: {
       control: { type: 'select', options: ['small', 'medium', 'large'] }
     },

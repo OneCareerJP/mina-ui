@@ -122,7 +122,6 @@ export default Vue.extend<Data, Methods, Computed, Props>({
     cursor: pointer;
   }
 
-  /* small,largeは適当 必要出てきたら値直す */
   &--small {
     font-size: 12px;
     line-height: 17px;
