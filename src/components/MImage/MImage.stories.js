@@ -15,5 +15,5 @@ const Template = (args, { argTypes }) => ({
 export const Default = Template.bind({});
 Default.args = {
   src: 'https://tpc.googlesyndication.com/simgad/9781406292468174616',
-  alt: '2日で本命企業を見つける！！'
+  alt: 'alt'
 };

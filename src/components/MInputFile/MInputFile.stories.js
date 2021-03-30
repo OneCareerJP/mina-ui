@@ -16,7 +16,7 @@ const Template = (args, { argTypes }) => ({
 
 export const Default = Template.bind({});
 Default.args = {
-  placeholder: '画像ファイルをアップロードする',
+  placeholder: 'Upload image file.',
   allowType: ['image/jpeg', 'image/png'],
   accept: 'image/*',
   unit: 'MB',

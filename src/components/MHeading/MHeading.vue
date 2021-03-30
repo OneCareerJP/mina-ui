@@ -45,7 +45,7 @@ export default Vue.extend<Data, Methods, Computed, Props>({
 </script>
 
 <style lang="scss" scoped>
-/* NOTE:headind毎のデザインがあれば変更 */
+/* NOTE:Change if there is a design for each heading. */
 .m-heading1 {
   color: $mina-ink;
   font-size: $font-xxxx-large;

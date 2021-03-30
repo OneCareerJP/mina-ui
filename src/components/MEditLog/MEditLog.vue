@@ -84,7 +84,7 @@ export default Vue.extend<Data, Methods, Computed, Props>({
       font-size: 12px;
     }
     &--explanation {
-      /* NOTE: style崩れを防ぐためにwidthを設定 */
+      /* NOTE: Set width to prevent style collapse. */
       max-width: 855px;
       padding: 4px 0 4px 12px;
     }

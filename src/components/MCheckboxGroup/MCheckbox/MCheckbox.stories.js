@@ -38,7 +38,8 @@ const Template = (args, { argTypes }) => ({
           currentValue => currentValue !== value
         );
         this.currentValues = filteredArray;
-        // emitする場合 this.$emit('update:currentValues', filteredArray);
+        // When emitting
+        // this.$emit('update:currentValues', filteredArray);
       } else {
         this.currentValues.push(value);
       }

@@ -19,7 +19,7 @@ const Template = (args, { argTypes }) => ({
       @mouseover.self="showTooltip"
       @mouseout="hideTooltip"
     >
-      ホバーするとツールチップがでます
+      When you hover, you will see a tooltip.
       <MTooltip v-show="tooltip" top="32px" left="0" v-bind="$props" :angle="angleData" />
     </div>
     `,

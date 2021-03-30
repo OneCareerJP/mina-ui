@@ -14,5 +14,5 @@ const Template = (args, { argTypes }) => ({
 
 export const Default = Template.bind({});
 Default.args = {
-  body: 'テキストが入ります'
+  body: 'text'
 };

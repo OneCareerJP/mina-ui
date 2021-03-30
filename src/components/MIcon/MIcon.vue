@@ -104,7 +104,7 @@ export default Vue.extend<Data, Methods, Computed, Props>({
 </script>
 
 <style lang="scss" scoped>
-/* NOTE:初期値を無効化 */
+/* NOTE:Invalidate the initial value. */
 .fa-layers svg.svg-inline--fa {
   bottom: inherit;
   left: inherit;
@@ -112,7 +112,7 @@ export default Vue.extend<Data, Methods, Computed, Props>({
   right: inherit;
   top: inherit;
 }
-/* NOTE:必要があれば色を増やしてください */
+/* NOTE:Add more colors if needed. */
 .m-icon {
   &__color {
     &--white {

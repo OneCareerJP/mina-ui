@@ -50,7 +50,7 @@ export default Vue.extend<Data, Methods, Computed, Props>({
                 `;
     document.getElementsByTagName('head')[0].appendChild(style);
 
-    // スクロール・イベントを追加
+    // Added scroll event.
     window.addEventListener('scroll', () => {
       this.show = window.scrollY > 100;
     });

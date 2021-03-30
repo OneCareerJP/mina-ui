@@ -15,7 +15,7 @@ const Template = (args, { argTypes }) => ({
 export const Default = Template.bind({});
 Default.args = {
   userName: 'SK',
-  labelText: '与信通過',
+  labelText: 'labelText',
   explanationText:
-    '説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。'
+    'explanationText. explanationText. explanationText. explanationText.'
 };

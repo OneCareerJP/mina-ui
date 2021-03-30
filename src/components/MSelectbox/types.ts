@@ -2,7 +2,7 @@ export interface Props {
   placeholder: string;
   initialSelectedValue: string | number;
   selectedValue: string | number;
-  selectList: string[]; // レスポンスがわかり次第で反映します
+  selectList: string[]; // It will be reflected as soon as the response is known.
   itemText: string;
   minWidth: string;
   inputDisabled: boolean;

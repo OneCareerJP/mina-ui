@@ -33,5 +33,5 @@ const Template = (args, { argTypes }) => ({
 
 export const Default = Template.bind({});
 Default.args = {
-  content: '見出しのサンプルです'
+  content: 'content'
 };

@@ -1,5 +1,5 @@
 export const documentBottomPosition = () => {
-  // NOTE: スクロールバーを除いた高さを取得
+  // NOTE:Get the height excluding the scroll bar.
   return document.documentElement.clientHeight + window.pageYOffset;
 };
 

@@ -84,7 +84,7 @@
           画像を編集する
         </MButton>
         <div class="m-input-file__file-delete" @click="onPreviewClose">
-          <!-- TODO:デザインfixしたらdialog出す -->
+          <!-- TODO:Display dialog after design fix. -->
           <MLabel color="denim-light">
             <MIcon icon-name="trash-alt" />画像を削除する
           </MLabel>

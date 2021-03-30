@@ -23,7 +23,7 @@ const Template = (args, { argTypes }) => ({
 
 export const Default = Template.bind({});
 Default.args = {
-  placeholder: 'プレイスホルダー',
+  placeholder: 'placeholder',
   selectList: [2020, 2021, 2022, 2023],
-  selectedValue: 2020 // 編集画面で予め選択されている場合を想定
+  selectedValue: 2020 // Assuming that it is selected in advance on the edit screen.
 };
