@@ -1,0 +1,68 @@
+/* Paragraph */
+@mixin paragraph-x-large {
+  font-size: $paragraph-x-large;
+  font-weight: bold;
+  line-height: 1.4;
+}
+@mixin paragraph-large {
+  font-size: $paragraph-large;
+  line-height: 1.4;
+}
+
+@mixin paragraph-medium {
+  font-size: $paragraph-medium;
+  line-height: 1.4;
+}
+
+@mixin paragraph-small {
+  font-size: $paragraph-small;
+  line-height: 1.4;
+}
+
+/* Label */
+@mixin label-x-large {
+  font-size: $label-x-large;
+  font-weight: bold;
+  line-height: 1.4;
+}
+@mixin label-large {
+  font-size: $label-large;
+  line-height: 1.4;
+}
+@mixin label-medium {
+  font-size: $label-medium;
+  line-height: 1.4;
+}
+@mixin label-small {
+  font-size: $label-small;
+  line-height: 1.4;
+}
+
+/* Link */
+@mixin link-medium {
+  font-size: $link-medium;
+  line-height: 1.4;
+}
+@mixin link-small {
+  font-size: $link-small;
+  line-height: 1.4;
+}
+@mixin link-x-small {
+  font-size: $link-x-small;
+  line-height: 1.4;
+}
+
+/* Button */
+@mixin button-large {
+  font-size: $button-large;
+  line-height: 1.4;
+  font-weight: bold;
+}
+@mixin button-medium {
+  font-size: $button-medium;
+  line-height: 1.4;
+}
+@mixin button-small {
+  font-size: $button-small;
+  line-height: 1.4;
+}

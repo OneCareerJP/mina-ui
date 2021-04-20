@@ -19,6 +19,7 @@
     "@types/body-scroll-lock": "^2.6.1",
     "body-scroll-lock": "^3.1.5",
     "core-js": "^3.6.5",
+    "dayjs": "^1.10.4",
     "vue": "^2.6.11",
     "vue-click-outside": "^1.1.0"
   },
@@ -43,8 +44,10 @@
     "prettier": "^1.19.1",
     "sass": "^1.26.5",
     "sass-loader": "^8.0.2",
+    "sass-resources-loader": "^2.1.1",
     "typescript": "~3.9.3",
     "vue-cli-plugin-storybook": "^2.0.0",
+    "vue-svg-loader": "^0.16.0",
     "vue-template-compiler": "^2.6.11"
   }
 }

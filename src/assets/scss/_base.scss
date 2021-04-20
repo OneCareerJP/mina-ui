@@ -1,4 +1,16 @@
-/* NOTE: Do not add to reset.scss, but add to this file instead. */
+/* NOTE:Do not add to reset, add here. */
 li {
   list-style: none;
+}
+
+thead {
+  display: table-header-group;
+  vertical-align: middle;
+  border-color: inherit;
+}
+
+tbody {
+  display: table-row-group;
+  vertical-align: middle;
+  border-color: inherit;
 }
