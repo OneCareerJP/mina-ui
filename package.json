@@ -6,11 +6,14 @@
   "main": "dist/mina-ui.common.js",
   "scripts": {
     "serve": "vue-cli-service serve",
+    "dev": "npm-run-all -p serve watch:**",
     "build": "vue-cli-service build --target lib --name mina-ui src/main.ts",
     "test:unit": "vue-cli-service test:unit",
     "lint": "vue-cli-service lint",
     "storybook:build": "vue-cli-service storybook:build -c config/storybook",
-    "storybook:serve": "vue-cli-service storybook:serve -p 6007 -c config/storybook"
+    "storybook:serve": "vue-cli-service storybook:serve -p 6007 -c config/storybook",
+    "prettier": "prettier --write '**/*.{js,ts,vue,json,scss}'",
+    "watch:prettier": "onchange '**/*.{js,ts,vue,json,scss}' -- prettier --write {{changed}}"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.32",
@@ -41,7 +44,10 @@
     "eslint": "^6.7.2",
     "eslint-plugin-prettier": "^3.1.3",
     "eslint-plugin-vue": "^6.2.2",
+    "npm-run-all": "^4.1.5",
+    "onchange": "^7.1.0",
     "prettier": "^1.19.1",
+    "prettier-stylelint": "^0.4.2",
     "sass": "^1.26.5",
     "sass-loader": "^8.0.2",
     "sass-resources-loader": "^2.1.1",
