@@ -1,0 +1,15 @@
+@mixin sideLayout {
+  &__top {
+    border-radius: 10px;
+  }
+
+  &__bottom {
+    margin: 40px 0 0;
+  }
+
+  &__content {
+    &:not(:first-of-type) {
+      margin: 24px 0 0;
+    }
+  }
+}

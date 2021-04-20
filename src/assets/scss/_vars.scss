@@ -1,0 +1,78 @@
+/* Primary Color */
+$mina-denim: #163f79;
+$mina-denim-light: #2363be;
+
+/* /* Secondary Color */
+$mina-indigo: #385080;
+$mina-indigo-light: #6380bb;
+$mina-indigo-lighter: #aabada;
+
+/* Base Color */
+$mina-sky: #c4cdd5;
+$mina-sky-light: #dfe3e8;
+$mina-sky-lighter: #f4f6f8;
+
+/* Font Color */
+$mina-ink: #212b36;
+$mina-ink-light: #454f5b;
+$mina-ink-lighter: #637381;
+
+/* Accent Color */
+$mina-salmon: #ee8282;
+
+/* UI Color */
+$mina-green: #50b83c;
+$mina-green-light: #bbe5b3;
+$mina-green-lighter: #e3f1df;
+$mina-red: #de3618;
+$mina-red-light: #fead9a;
+$mina-red-lighter: #fbeae5;
+$mina-yellow: #eec200;
+$mina-yellow-light: #ffea8a;
+$mina-yellow-lighter: #fcf1cd;
+
+/* Other Color */
+$mina-white: #fff;
+$mina-black: #000;
+
+// Text colors
+// -------------------------
+
+$tx-black: $mina-ink;
+$tx-black-light: $mina-ink-light;
+$tx-black-lighter: $mina-ink-lighter;
+$tx-white: $mina-white;
+
+// Font-size
+// -------------------------
+
+$font-xxxx-large: 26px;
+$font-xxx-large: 24px;
+$font-xx-large: 20px;
+$font-x-large: 18px;
+$font-large: 16px;
+$font-medium: 14px;
+$font-small: 13px;
+$font-x-small: 12px;
+
+/* Paragraph */
+$paragraph-x-large: $font-xxx-large;
+$paragraph-large: $font-large;
+$paragraph-medium: $font-medium;
+$paragraph-small: $font-x-small;
+
+/* Label */
+$label-x-large: $font-x-large;
+$label-large: $font-medium;
+$label-medium: $font-small;
+$label-small: $font-x-small;
+
+/* Link */
+$link-medium: $font-medium;
+$link-small: $font-small;
+$link-x-small: $font-x-small;
+
+/* Button */
+$Button-large: $font-medium;
+$Button-medium: $font-small;
+$Button-small: $font-x-small;
