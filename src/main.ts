@@ -12,6 +12,7 @@ import { MInfoItem } from './components/MInfoItem';
 import { MInputFile } from './components/MInputFile';
 import { MInputText } from './components/MInputText';
 import { MLink } from './components/MLink';
+import { MLoading } from './components/MLoading';
 import { MModal } from './components/MModal';
 import { MPageTop } from './components/MPageTop';
 import { MPanel } from './components/MPanel';
@@ -41,6 +42,7 @@ const components = [
   MInputFile,
   MInputText,
   MLink,
+  MLoading,
   MModal,
   MPageTop,
   MPanel,

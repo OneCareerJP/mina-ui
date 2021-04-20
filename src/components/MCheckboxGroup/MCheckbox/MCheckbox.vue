@@ -1,5 +1,11 @@
 <template>
-  <div class="m-checkbox" :class="{ 'm-checkbox--checked': isChecked }">
+  <div
+    class="m-checkbox"
+    :class="[
+      { 'm-checkbox--checked': isChecked },
+      { 'm-checkbox--disabled': disabled }
+    ]"
+  >
     <label class="m-checkbox__label">
       <input
         :id="id"
@@ -8,6 +14,7 @@
         :name="name"
         :value="value"
         :checked="isChecked"
+        :disabled="disabled"
         v-on="listeners"
       />
       <slot />
@@ -37,6 +44,10 @@ export default Vue.extend<Data, Methods, Computed, Props>({
     name: {
       type: String,
       default: ''
+    },
+    disabled: {
+      type: Boolean,
+      default: false
     }
   },
   computed: {
@@ -105,6 +116,37 @@ export default Vue.extend<Data, Methods, Computed, Props>({
       border-right: 3px solid $mina-white;
       transform: rotate(45deg);
     }
+  }
+
+  &--disabled &__label {
+    &:hover {
+      cursor: not-allowed;
+    }
+  }
+
+  &--disabled.m-checkbox--disabled &__label {
+    &::before {
+      border: 2px solid $mina-sky-light;
+      background: $mina-sky-light;
+      border-radius: 4px;
+    }
+
+    &::after {
+      content: '';
+      display: block;
+      height: 10px;
+      width: 5px;
+      position: absolute;
+      top: 3px;
+      left: 7px;
+      border-bottom: 3px solid $mina-white;
+      border-right: 3px solid $mina-white;
+      transform: rotate(45deg);
+    }
+  }
+
+  &--disabled {
+    pointer-events: none !important;
   }
 }
 </style>
