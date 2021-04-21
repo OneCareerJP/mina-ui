@@ -19,7 +19,6 @@ import { MPageTop } from './components/MPageTop';
 import { MPanel } from './components/MPanel';
 import { MRadioGroup } from './components/MRadioGroup';
 import { MSelectbox } from './components/MSelectbox';
-import { MSide } from './components/MSide';
 import { MSvg } from './components/MSvg';
 import { MTabContent, MTabs } from './components/MTabGroup';
 import { MTable } from './components/MTable';
@@ -63,7 +62,6 @@ const components = [
   MPanel,
   MRadioGroup,
   MSelectbox,
-  MSide,
   MSvg,
   MTabContent,
   MTabs,
@@ -105,7 +103,6 @@ export default {
   MPanel,
   MRadioGroup,
   MSelectbox,
-  MSide,
   MSvg,
   MTabContent,
   MTabs,

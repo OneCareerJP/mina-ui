@@ -147,37 +147,7 @@ export default Vue.extend<Data, Methods, Computed, Props>({
   }
 
   &--processing {
-    font-size: 2px;
-    position: relative;
-    text-indent: -9999em;
-    margin: 0 auto;
-    border-top: 1.1em solid rgba($color: $mina-white, $alpha: 0.2) 0%;
-    border-right: 1.1em solid rgba($color: $mina-white, $alpha: 0.2) 0%;
-    border-bottom: 1.1em solid rgba($color: $mina-white, $alpha: 0.2) 0%;
-    border-left: 1.1em solid $mina-white;
-    transform: translateZ(0);
-    animation: load 1.1s infinite linear;
-
-    @-webkit-keyframes load {
-      0% {
-        -webkit-transform: rotate(0deg);
-        transform: rotate(0deg);
-      }
-      100% {
-        -webkit-transform: rotate(360deg);
-        transform: rotate(360deg);
-      }
-    }
-    @keyframes load {
-      0% {
-        -webkit-transform: rotate(0deg);
-        transform: rotate(0deg);
-      }
-      100% {
-        -webkit-transform: rotate(360deg);
-        transform: rotate(360deg);
-      }
-    }
+    @include loading;
   }
 
   &--processing,

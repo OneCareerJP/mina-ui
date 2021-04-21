@@ -1,7 +1,7 @@
 import MLoading from './MLoading.vue';
 
 export default {
-  title: 'Atom/MLoading',
+  title: 'UI/MLoading',
   component: MLoading,
   argTypes: {}
 };
@@ -9,9 +9,7 @@ export default {
 const Template = (args, { argTypes }) => ({
   props: Object.keys(argTypes),
   components: { MLoading },
-  template: `<div>
-    <MLoading />
-  </div>`
+  template: `<MLoading />`
 });
 
 export const Default = Template.bind({});
