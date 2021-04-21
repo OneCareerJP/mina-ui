@@ -32,7 +32,7 @@
         <VueCropper
           ref="cropper"
           drag-mode="crop"
-          :aspect-ratio="aspectRatio.x / aspectRatio.y"
+          :aspect-ratio="isAspectRatio.x / isAspectRatio.y"
           :src="imagePath ? imagePath : findFileImagePath"
           alt="Source Image"
         />
@@ -171,8 +171,8 @@ export default Vue.extend<Data, Methods, Computed, Props>({
       default: false
     },
     aspectRatio: {
-      type: Object,
-      default: () => ({ x: 1, y: 1 })
+      type: [Object, String],
+      default: { x: 1, y: 1 }
     }
   },
   data() {
@@ -189,6 +189,11 @@ export default Vue.extend<Data, Methods, Computed, Props>({
     };
   },
   computed: {
+    isAspectRatio() {
+      if (typeof this.checked === 'string') return '{ x: 1, y: 1 }';
+      if (typeof this.checked === 'function') return this.aspectRatio();
+      return { x: 1, y: 1 };
+    },
     findFileImagePath() {
       let image;
       this.files.find(item => {
