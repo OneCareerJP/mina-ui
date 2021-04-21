@@ -5,13 +5,17 @@ import {
   FontAwesomeIcon,
   FontAwesomeLayers
 } from '@fortawesome/vue-fontawesome';
+import VueCropper from 'vue-cropperjs';
+import 'cropperjs/dist/cropper.css';
 import 'dayjs/locale/ja';
 import dayjs from 'dayjs';
-dayjs.locale('ja');
+
 library.add(fas);
+dayjs.locale('ja');
 
 Vue.component('FontAwesomeIcon', FontAwesomeIcon);
 Vue.component('FontAwesomeLayers', FontAwesomeLayers);
+Vue.component('VueCropper', VueCropper);
 // NOTE:Vue Router mock
 Vue.component('RouterLink', {
   template: `

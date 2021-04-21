@@ -57,7 +57,7 @@ export default Vue.extend<Data, Methods, Computed, Props>({
       type: String,
       default: 'standard',
       validator(type: string) {
-        return ['primary', 'standard', 'outlined', 'icon-rounded'].includes(
+        return ['', 'primary', 'standard', 'outlined', 'icon-rounded'].includes(
           type
         );
       }

@@ -1,3 +1,4 @@
+import Vue from 'vue';
 import { VueConstructor } from 'vue';
 import { MAccordion } from './components/MAccordion';
 import { MButton } from './components/MButton';
@@ -26,6 +27,20 @@ import { MTag } from './components/MTag';
 import { MTextarea } from './components/MTextarea';
 import { MTooltip } from './components/MTooltip';
 import { MBody, MEmphasis, MLabel } from './components/MTypography';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { fas } from '@fortawesome/free-solid-svg-icons';
+import {
+  FontAwesomeIcon,
+  FontAwesomeLayers
+} from '@fortawesome/vue-fontawesome';
+import VueCropper from 'vue-cropperjs';
+import 'cropperjs/dist/cropper.css';
+
+library.add(fas);
+
+Vue.component('FontAwesomeIcon', FontAwesomeIcon);
+Vue.component('FontAwesomeLayers', FontAwesomeLayers);
+Vue.component('VueCropper', VueCropper);
 
 const components = [
   MAccordion,
