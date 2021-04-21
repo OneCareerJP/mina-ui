@@ -111,7 +111,7 @@ export default Vue.extend<Data, Methods, Computed, Props>({
   },
   computed: {
     setSelectedValue() {
-      return this.selectedValue === '' || this.selectedValue === 0
+      return !this.selectedValue
         ? this.initialSelectedValue
         : this.selectedValue;
     },

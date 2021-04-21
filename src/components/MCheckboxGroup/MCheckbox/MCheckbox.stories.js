@@ -10,7 +10,7 @@ const Template = (args, { argTypes }) => ({
   props: Object.keys(argTypes),
   components: { MCheckbox },
   template: `<div>
-      <MCheckbox :id="1" value="example1" :checked="checked1" @click="checked1 = !checked1">{{ label }}</MCheckbox>
+      <MCheckbox v-bind="$props" :checked="checked1" @click="checked1 = !checked1">{{ label }}</MCheckbox>
       <hr />
       <MCheckbox
         v-for="sample of samples"

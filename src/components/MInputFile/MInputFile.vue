@@ -172,7 +172,7 @@ export default Vue.extend<Data, Methods, Computed, Props>({
     },
     aspectRatio: {
       type: [Object, String],
-      default: { x: 1, y: 1 }
+      default: () => ({ x: 1, y: 1 })
     }
   },
   data() {

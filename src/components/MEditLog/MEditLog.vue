@@ -8,10 +8,14 @@
     </div>
     <div class="m-edit-log__text-wrapper">
       <MLabel size="large" color="ink-lighter">
-        {{ labelText }}（{{ formatDate }}
+        {{ labelText }}（{{ formatDate }}）
       </MLabel>
       <div v-if="explanationText" class="m-edit-log__explanation">
-        <MBody class="m-edit-log__text--explanation" color="ink-lighter">
+        <MBody
+          v-html="explanationText"
+          class="m-edit-log__text--explanation"
+          color="ink-lighter"
+        >
           {{ explanationText }}
         </MBody>
       </div>

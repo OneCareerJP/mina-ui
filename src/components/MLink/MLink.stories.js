@@ -12,6 +12,9 @@ export default {
     },
     size: {
       control: { type: 'select', options: ['x-small', 'small', 'medium'] }
+    },
+    tag: {
+      control: { type: 'select', options: ['', 'anchor'] }
     }
   }
 };

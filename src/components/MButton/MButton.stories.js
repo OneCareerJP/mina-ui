@@ -8,12 +8,27 @@ export default {
     size: {
       control: { type: 'select', options: ['small', 'medium', 'large'] }
     },
-    iconColor: { control: 'color' },
+    iconColor: {
+      control: {
+        type: 'select',
+        options: [
+          'white',
+          'indigo',
+          'indigo-light',
+          'denim-light',
+          'ink-light',
+          'ink-lighter',
+          'sky',
+          'success',
+          'warning',
+          'error'
+        ]
+      }
+    },
     iconName: {
       control: {
         type: 'select',
         options: [
-          '',
           'angle-right',
           'angle-down',
           'angle-left',
@@ -58,7 +73,9 @@ Standard.args = {
 export const Primary = Template.bind({});
 Primary.args = {
   label: 'Button',
-  type: 'primary'
+  type: 'primary',
+  icon: true,
+  iconName: 'plus-circle'
 };
 export const Outlined = Template.bind({});
 Outlined.args = {

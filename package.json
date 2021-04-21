@@ -10,6 +10,7 @@
     "build": "vue-cli-service build --target lib --name mina-ui src/main.ts",
     "test:unit": "vue-cli-service test:unit",
     "lint": "vue-cli-service lint",
+    "stylelint": "stylelint '**/*.{vue,scss}'",
     "storybook": "start-storybook -p 6007",
     "storybook:build": "build-storybook",
     "prettier": "prettier --write '**/*.{js,ts,vue,json,scss}'",
