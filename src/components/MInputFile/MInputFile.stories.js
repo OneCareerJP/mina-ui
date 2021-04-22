@@ -20,5 +20,6 @@ Default.args = {
   allowType: ['image/jpeg', 'image/png'],
   accept: 'image/*',
   unit: 'MB',
-  limitSize: 5
+  limitSize: 5,
+  aspectRatio: { x: 2, y: 3 }
 };

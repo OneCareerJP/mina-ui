@@ -57,7 +57,7 @@ export default Vue.extend<Data, Methods, Computed, Props>({
       type: String,
       default: 'standard',
       validator(type: string) {
-        return ['primary', 'standard', 'outlined', 'icon-rounded'].includes(
+        return ['', 'primary', 'standard', 'outlined', 'icon-rounded'].includes(
           type
         );
       }
@@ -123,16 +123,13 @@ export default Vue.extend<Data, Methods, Computed, Props>({
   }
 
   &--small {
-    font-size: 12px;
-    line-height: 17px;
+    @include button-small;
   }
   &--medium {
-    font-size: 13px;
-    line-height: 19px;
+    @include button-medium;
   }
   &--large {
-    font-size: 16px;
-    line-height: 21px;
+    @include button-large;
   }
 
   &--disabled {
@@ -149,45 +146,15 @@ export default Vue.extend<Data, Methods, Computed, Props>({
     }
   }
 
+  &--processing {
+    @include loading;
+  }
+
   &--processing,
   &--processing::after {
     border-radius: 50%;
-    width: 10em;
+    width: 7em;
     height: auto;
-  }
-
-  &--processing {
-    font-size: 2px;
-    position: relative;
-    text-indent: -9999em;
-    margin: 0 auto;
-    border-top: 1.1em solid rgba($color: $mina-white, $alpha: 0.2) 0%;
-    border-right: 1.1em solid rgba($color: $mina-white, $alpha: 0.2) 0%;
-    border-bottom: 1.1em solid rgba($color: $mina-white, $alpha: 0.2) 0%;
-    border-left: 1.1em solid $mina-white;
-    transform: translateZ(0);
-    animation: load8 1.1s infinite linear;
-
-    @-webkit-keyframes load8 {
-      0% {
-        -webkit-transform: rotate(0deg);
-        transform: rotate(0deg);
-      }
-      100% {
-        -webkit-transform: rotate(360deg);
-        transform: rotate(360deg);
-      }
-    }
-    @keyframes load8 {
-      0% {
-        -webkit-transform: rotate(0deg);
-        transform: rotate(0deg);
-      }
-      100% {
-        -webkit-transform: rotate(360deg);
-        transform: rotate(360deg);
-      }
-    }
   }
 
   &--primary {

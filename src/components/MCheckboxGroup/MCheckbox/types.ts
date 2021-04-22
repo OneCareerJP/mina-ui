@@ -3,6 +3,7 @@ export interface Props {
   value: number | string;
   id: number;
   name: string;
+  disabled: boolean;
 }
 export interface Data {}
 export interface Computed {

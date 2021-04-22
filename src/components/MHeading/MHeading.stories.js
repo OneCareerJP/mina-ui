@@ -13,7 +13,7 @@ export default {
     visual: {
       control: {
         type: 'select',
-        options: ['1-underline', '3-underline', '4-underline']
+        options: ['', '1-underline', '3-underline', '4-underline']
       }
     },
     color: {
@@ -33,5 +33,6 @@ const Template = (args, { argTypes }) => ({
 
 export const Default = Template.bind({});
 Default.args = {
-  content: 'content'
+  content: 'Heading',
+  color: 'ink'
 };

@@ -12,11 +12,17 @@ const Template = (args, { argTypes }) => ({
   template: `
     <MSelectbox
       v-bind="$props"
-      @click="handleChange"
+      @change="handleChange"
+      :selectedValue="dataSelectedValue"
     />`,
+  data() {
+    return {
+      dataSelectedValue: undefined
+    };
+  },
   methods: {
     handleChange(value) {
-      this.selectedValue = value;
+      this.dataSelectedValue = value;
     }
   }
 });
@@ -24,6 +30,5 @@ const Template = (args, { argTypes }) => ({
 export const Default = Template.bind({});
 Default.args = {
   placeholder: 'placeholder',
-  selectList: [2020, 2021, 2022, 2023],
-  selectedValue: 2020 // Assuming that it is selected in advance on the edit screen.
+  selectList: [2020, 2021, 2022, 2023]
 };

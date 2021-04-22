@@ -1,5 +1,6 @@
 export interface Props {
-  minWidth: string;
+  top: string;
+  left: string;
 }
 export interface Data {}
 export interface Computed {}

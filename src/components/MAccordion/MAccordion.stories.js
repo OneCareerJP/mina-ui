@@ -10,7 +10,6 @@ const Template = (args, { argTypes }) => ({
   props: Object.keys(argTypes),
   components: { MAccordion },
   template: `
-  <div style="background-color: #dfe3e8;">
     <MAccordion style="padding: 24px;">
       <template v-slot:title>
         <div>
@@ -23,7 +22,6 @@ const Template = (args, { argTypes }) => ({
         </div>
       </template>
     </MAccordion>
-  </div>
   `,
   methods: {}
 });
