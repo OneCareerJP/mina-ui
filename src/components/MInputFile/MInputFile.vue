@@ -103,6 +103,7 @@ import MImage from '@/components/MImage/MImage.vue';
 import MIcon from '@/components/MIcon/MIcon.vue';
 
 export default Vue.extend<Data, Methods, Computed, Props>({
+  name: 'MInputFile',
   components: {
     MButton,
     MLabel,

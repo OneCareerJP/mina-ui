@@ -32,6 +32,7 @@ import MLabel from '@/components/MTypography/MLabel/MLabel.vue';
 import dayjs from 'dayjs';
 
 export default Vue.extend<Data, Methods, Computed, Props>({
+  name: 'MEditLog',
   components: {
     MIcon,
     MLabel,

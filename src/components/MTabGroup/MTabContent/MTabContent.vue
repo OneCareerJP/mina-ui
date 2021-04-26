@@ -8,6 +8,7 @@
 import Vue from 'vue';
 import { Data, Methods, Computed, Props } from './types';
 export default Vue.extend<Data, Methods, Computed, Props>({
+  name: 'MTabContent',
   props: {
     label: {
       type: String,

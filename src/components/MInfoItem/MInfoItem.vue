@@ -25,6 +25,7 @@ import MLink from '@/components/MLink/MLink.vue';
 import MIcon from '@/components/MIcon/MIcon.vue';
 
 export default Vue.extend<Data, Methods, Computed, Props>({
+  name: 'MInfoItem',
   components: {
     MLabel,
     MLink,

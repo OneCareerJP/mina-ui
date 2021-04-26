@@ -98,6 +98,7 @@ export default {
   MInputFile,
   MInputText,
   MLink,
+  MLoading,
   MModal,
   MPageTop,
   MPanel,

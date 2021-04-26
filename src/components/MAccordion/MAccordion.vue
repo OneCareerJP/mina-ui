@@ -43,6 +43,7 @@ import { Data, Methods, Computed, Props } from './types';
 import MIcon from '@/components/MIcon/MIcon.vue';
 import MPanel from '@/components/MPanel/MPanel.vue';
 export default Vue.extend<Data, Methods, Computed, Props>({
+  name: 'MAccordion',
   components: {
     MIcon,
     MPanel
