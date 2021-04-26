@@ -16,6 +16,7 @@ import MBody from '@/components/MTypography/MBody/MBody.vue';
 import { Data, Methods, Computed, Props } from './types';
 
 export default Vue.extend<Data, Methods, Computed, Props>({
+  name: 'MCommentLog',
   components: {
     MBody
   },

@@ -8,6 +8,7 @@
 import Vue from 'vue';
 import minaLogo from '@/assets/images/svg/logo_mina.svg';
 export default Vue.extend({
+  name: 'MSvg',
   components: {
     minaLogo
   },
