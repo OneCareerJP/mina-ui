@@ -21468,7 +21468,7 @@ index_es["c" /* library */].add(_iconsCache);
 external_commonjs_vue_commonjs2_vue_root_Vue_default.a.component('FontAwesomeIcon', vue_fontawesome_index_es["a" /* FontAwesomeIcon */]);
 external_commonjs_vue_commonjs2_vue_root_Vue_default.a.component('FontAwesomeLayers', vue_fontawesome_index_es["b" /* FontAwesomeLayers */]);
 external_commonjs_vue_commonjs2_vue_root_Vue_default.a.component('VueCropper', VueCropper_default.a);
-var components = [MAccordion, MButton, MCheckbox, MCheckboxGroup, MCommentLog, MEditLog, MHeading, MIcon, MIframe, MImage, MInfoItem, MInputFile, MInputText, MLink, MLoading, MModal, MPageTop, MPanel, MRadioGroup, MSelectbox, MSvg, MTabContent, MTabs, MTable, MTag, MTextarea, MTooltip, MBody, MEmphasis, MLabel];
+var components = [MAccordion, MButton, MCheckbox, MCheckboxGroup, MCommentLog, MEditLog, MHeading, MIcon, MIframe, MImage, MInfoItem, MInputFile, MInputText, MLink, MLoading, MModal, MPageTop, MPanel, MRadioGroup, MRadio, MSelectbox, MSvg, MTabContent, MTabs, MTable, MTag, MTextarea, MTooltip, MBody, MEmphasis, MLabel];
 
 var install = function install(Vue) {
   components.forEach(function (component) {
@@ -21494,10 +21494,12 @@ var install = function install(Vue) {
   MInputFile: MInputFile,
   MInputText: MInputText,
   MLink: MLink,
+  MLoading: MLoading,
   MModal: MModal,
   MPageTop: MPageTop,
   MPanel: MPanel,
   MRadioGroup: MRadioGroup,
+  MRadio: MRadio,
   MSelectbox: MSelectbox,
   MSvg: MSvg,
   MTabContent: MTabContent,
