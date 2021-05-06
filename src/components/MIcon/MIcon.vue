@@ -59,6 +59,7 @@ export default Vue.extend<Data, Methods, Computed, Props>({
           'lightbulb',
           'pause-circle',
           'plus-circle',
+          'plus',
           'search',
           'square',
           'tv',
