@@ -9,9 +9,21 @@
         size="12px"
       />
     </div>
-    <div class="info-item__body">
+    <div
+      v-for="(item, itemIndex) in bodies"
+      :key="itemIndex"
+      class="info-item__body"
+    >
+      <MBody>{{ item.body }}</MBody>
+      <MLink v-if="item.url" tag="anchor" color="denim-light" :href="item.url">
+        {{ item.link }}
+      </MLink>
+    </div>
+    <div v-if="!bodies.length" class="info-item__body">
       <MBody>{{ bodyText }}</MBody>
-      <MLink v-if="href" tag="anchor" :href="href">{{ linkText }}</MLink>
+      <MLink v-if="href" tag="anchor" color="denim-light" :href="href">
+        {{ linkText }}
+      </MLink>
     </div>
   </div>
 </template>
@@ -52,6 +64,10 @@ export default Vue.extend<Data, Methods, Computed, Props>({
     icon: {
       type: Boolean,
       default: false
+    },
+    bodies: {
+      type: Array,
+      default: () => []
     }
   }
 });
