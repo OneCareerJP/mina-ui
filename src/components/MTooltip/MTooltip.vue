@@ -3,10 +3,10 @@
     <MPanel
       class="m-tooltip"
       :class="angle ? `m-tooltip--${angle}` : ''"
-      :style="{ top: top, left: left }"
+      :style="{ top: top, left: left, width: width }"
       rounded
     >
-      <MBody>{{ body }}</MBody>
+      <slot />
     </MPanel>
   </transition>
 </template>
@@ -15,19 +15,13 @@
 import Vue from 'vue';
 import { Data, Methods, Computed, Props } from './types';
 import MPanel from '@/components/MPanel/MPanel.vue';
-import MBody from '@/components/MTypography/MBody/MBody.vue';
 
 export default Vue.extend<Data, Methods, Computed, Props>({
   name: 'MTooltip',
   components: {
-    MPanel,
-    MBody
+    MPanel
   },
   props: {
-    body: {
-      type: String,
-      default: ''
-    },
     angle: {
       type: String,
       default: ''
@@ -37,6 +31,10 @@ export default Vue.extend<Data, Methods, Computed, Props>({
       default: ''
     },
     left: {
+      type: String,
+      default: ''
+    },
+    width: {
       type: String,
       default: ''
     }
@@ -54,6 +52,7 @@ export default Vue.extend<Data, Methods, Computed, Props>({
   border: solid 2px $mina-sky;
   box-sizing: border-box;
   cursor: default;
+  z-index: 1;
 
   &::before {
     content: '';
