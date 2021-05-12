@@ -225,6 +225,17 @@ exports.f = DESCRIPTORS ? nativeGetOwnPropertyDescriptor : function getOwnProper
 
 /***/ }),
 
+/***/ "0af8":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var _node_modules_mini_css_extract_plugin_dist_loader_js_ref_8_oneOf_1_0_node_modules_vue_cli_service_node_modules_css_loader_dist_cjs_js_ref_8_oneOf_1_1_node_modules_vue_cli_service_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_2_node_modules_sass_loader_dist_cjs_js_ref_8_oneOf_1_3_node_modules_sass_resources_loader_lib_loader_js_ref_8_oneOf_1_4_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_cli_service_node_modules_vue_loader_lib_index_js_vue_loader_options_MTooltip_vue_vue_type_style_index_0_id_019f6485_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("b521");
+/* harmony import */ var _node_modules_mini_css_extract_plugin_dist_loader_js_ref_8_oneOf_1_0_node_modules_vue_cli_service_node_modules_css_loader_dist_cjs_js_ref_8_oneOf_1_1_node_modules_vue_cli_service_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_2_node_modules_sass_loader_dist_cjs_js_ref_8_oneOf_1_3_node_modules_sass_resources_loader_lib_loader_js_ref_8_oneOf_1_4_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_cli_service_node_modules_vue_loader_lib_index_js_vue_loader_options_MTooltip_vue_vue_type_style_index_0_id_019f6485_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_mini_css_extract_plugin_dist_loader_js_ref_8_oneOf_1_0_node_modules_vue_cli_service_node_modules_css_loader_dist_cjs_js_ref_8_oneOf_1_1_node_modules_vue_cli_service_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_2_node_modules_sass_loader_dist_cjs_js_ref_8_oneOf_1_3_node_modules_sass_resources_loader_lib_loader_js_ref_8_oneOf_1_4_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_cli_service_node_modules_vue_loader_lib_index_js_vue_loader_options_MTooltip_vue_vue_type_style_index_0_id_019f6485_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__);
+/* unused harmony reexport * */
+
+
+/***/ }),
+
 /***/ "0cfb":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1395,17 +1406,6 @@ module.exports = function (originalArray, length) {
 
 /***/ }),
 
-/***/ "673d":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var _node_modules_mini_css_extract_plugin_dist_loader_js_ref_8_oneOf_1_0_node_modules_vue_cli_service_node_modules_css_loader_dist_cjs_js_ref_8_oneOf_1_1_node_modules_vue_cli_service_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_2_node_modules_sass_loader_dist_cjs_js_ref_8_oneOf_1_3_node_modules_sass_resources_loader_lib_loader_js_ref_8_oneOf_1_4_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_cli_service_node_modules_vue_loader_lib_index_js_vue_loader_options_MTooltip_vue_vue_type_style_index_0_id_7506a0c6_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("95ee");
-/* harmony import */ var _node_modules_mini_css_extract_plugin_dist_loader_js_ref_8_oneOf_1_0_node_modules_vue_cli_service_node_modules_css_loader_dist_cjs_js_ref_8_oneOf_1_1_node_modules_vue_cli_service_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_2_node_modules_sass_loader_dist_cjs_js_ref_8_oneOf_1_3_node_modules_sass_resources_loader_lib_loader_js_ref_8_oneOf_1_4_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_cli_service_node_modules_vue_loader_lib_index_js_vue_loader_options_MTooltip_vue_vue_type_style_index_0_id_7506a0c6_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_mini_css_extract_plugin_dist_loader_js_ref_8_oneOf_1_0_node_modules_vue_cli_service_node_modules_css_loader_dist_cjs_js_ref_8_oneOf_1_1_node_modules_vue_cli_service_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_2_node_modules_sass_loader_dist_cjs_js_ref_8_oneOf_1_3_node_modules_sass_resources_loader_lib_loader_js_ref_8_oneOf_1_4_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_cli_service_node_modules_vue_loader_lib_index_js_vue_loader_options_MTooltip_vue_vue_type_style_index_0_id_7506a0c6_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__);
-/* unused harmony reexport * */
-
-
-/***/ }),
-
 /***/ "69f3":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -2361,13 +2361,6 @@ exports.default = {
     }
   }
 };
-
-/***/ }),
-
-/***/ "95ee":
-/***/ (function(module, exports, __webpack_require__) {
-
-// extracted by mini-css-extract-plugin
 
 /***/ }),
 
@@ -4424,6 +4417,13 @@ if (DESCRIPTORS && !(NAME in FunctionPrototype)) {
 /***/ }),
 
 /***/ "b387":
+/***/ (function(module, exports, __webpack_require__) {
+
+// extracted by mini-css-extract-plugin
+
+/***/ }),
+
+/***/ "b521":
 /***/ (function(module, exports, __webpack_require__) {
 
 // extracted by mini-css-extract-plugin
@@ -15294,28 +15294,22 @@ var MTextarea_component = normalizeComponent(
 // CONCATENATED MODULE: ./src/components/MTextarea/index.ts
 
 
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"a4b13abc-vue-loader-template"}!./node_modules/@vue/cli-service/node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/@vue/cli-service/node_modules/vue-loader/lib??vue-loader-options!./src/components/MTooltip/MTooltip.vue?vue&type=template&id=7506a0c6&scoped=true&
-var MTooltipvue_type_template_id_7506a0c6_scoped_true_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('transition',{attrs:{"name":"fade"}},[_c('MPanel',{staticClass:"m-tooltip",class:_vm.angle ? ("m-tooltip--" + _vm.angle) : '',style:({ top: _vm.top, left: _vm.left }),attrs:{"rounded":""}},[_c('MBody',[_vm._v(_vm._s(_vm.body))])],1)],1)}
-var MTooltipvue_type_template_id_7506a0c6_scoped_true_staticRenderFns = []
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"a4b13abc-vue-loader-template"}!./node_modules/@vue/cli-service/node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/@vue/cli-service/node_modules/vue-loader/lib??vue-loader-options!./src/components/MTooltip/MTooltip.vue?vue&type=template&id=019f6485&scoped=true&
+var MTooltipvue_type_template_id_019f6485_scoped_true_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('transition',{attrs:{"name":"fade"}},[_c('MPanel',{staticClass:"m-tooltip",class:_vm.angle ? ("m-tooltip--" + _vm.angle) : '',style:({ top: _vm.top, left: _vm.left, width: _vm.width }),attrs:{"rounded":""}},[_vm._t("default")],2)],1)}
+var MTooltipvue_type_template_id_019f6485_scoped_true_staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./src/components/MTooltip/MTooltip.vue?vue&type=template&id=7506a0c6&scoped=true&
+// CONCATENATED MODULE: ./src/components/MTooltip/MTooltip.vue?vue&type=template&id=019f6485&scoped=true&
 
 // CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--14-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/ts-loader??ref--14-3!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/@vue/cli-service/node_modules/vue-loader/lib??vue-loader-options!./src/components/MTooltip/MTooltip.vue?vue&type=script&lang=ts&
-
 
 
 /* harmony default export */ var MTooltipvue_type_script_lang_ts_ = (external_commonjs_vue_commonjs2_vue_root_Vue_default.a.extend({
   name: 'MTooltip',
   components: {
-    MPanel: MPanel,
-    MBody: MBody
+    MPanel: MPanel
   },
   props: {
-    body: {
-      type: String,
-      default: ''
-    },
     angle: {
       type: String,
       default: ''
@@ -15327,13 +15321,17 @@ var MTooltipvue_type_template_id_7506a0c6_scoped_true_staticRenderFns = []
     left: {
       type: String,
       default: ''
+    },
+    width: {
+      type: String,
+      default: ''
     }
   }
 }));
 // CONCATENATED MODULE: ./src/components/MTooltip/MTooltip.vue?vue&type=script&lang=ts&
  /* harmony default export */ var MTooltip_MTooltipvue_type_script_lang_ts_ = (MTooltipvue_type_script_lang_ts_); 
-// EXTERNAL MODULE: ./src/components/MTooltip/MTooltip.vue?vue&type=style&index=0&id=7506a0c6&lang=scss&scoped=true&
-var MTooltipvue_type_style_index_0_id_7506a0c6_lang_scss_scoped_true_ = __webpack_require__("673d");
+// EXTERNAL MODULE: ./src/components/MTooltip/MTooltip.vue?vue&type=style&index=0&id=019f6485&lang=scss&scoped=true&
+var MTooltipvue_type_style_index_0_id_019f6485_lang_scss_scoped_true_ = __webpack_require__("0af8");
 
 // CONCATENATED MODULE: ./src/components/MTooltip/MTooltip.vue
 
@@ -15346,11 +15344,11 @@ var MTooltipvue_type_style_index_0_id_7506a0c6_lang_scss_scoped_true_ = __webpac
 
 var MTooltip_component = normalizeComponent(
   MTooltip_MTooltipvue_type_script_lang_ts_,
-  MTooltipvue_type_template_id_7506a0c6_scoped_true_render,
-  MTooltipvue_type_template_id_7506a0c6_scoped_true_staticRenderFns,
+  MTooltipvue_type_template_id_019f6485_scoped_true_render,
+  MTooltipvue_type_template_id_019f6485_scoped_true_staticRenderFns,
   false,
   null,
-  "7506a0c6",
+  "019f6485",
   null
   
 )

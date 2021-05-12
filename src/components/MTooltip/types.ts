@@ -1,11 +1,9 @@
 export interface Props {
-  body: string;
+  width: string;
   angle: string;
   top: string;
   left: string;
 }
 export interface Data {}
-export interface Computed {
-  setAngleClassName: string;
-}
+export interface Computed {}
 export interface Methods {}
