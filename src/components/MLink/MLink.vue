@@ -96,7 +96,7 @@ export default Vue.extend<Data, Methods, Computed, Props>({
     customStyle: {
       type: Object,
       default: null
-    },
+    }
   },
   computed: {
     LinkType() {
