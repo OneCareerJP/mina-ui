@@ -4,7 +4,7 @@ export interface Props {
   linkText: string;
   href: string;
   icon: boolean;
-  bodies: { body: string, link: string, url: string }[]
+  bodies: { body: string; link: string; url: string }[];
 }
 export interface Data {}
 export interface Computed {}

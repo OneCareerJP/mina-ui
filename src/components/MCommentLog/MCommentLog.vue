@@ -1,8 +1,11 @@
 <template>
   <div class="m-comment-log">
-    <MBody class="m-comment-log__body" color="ink-lighter" size="small">
-      {{ comment }}
-    </MBody>
+    <MBody
+      class="m-comment-log__body"
+      color="ink-lighter"
+      size="small"
+      v-html="$sanitize(comment.replace(/\n/g, '<br/>'))"
+    />
     <!-- 使用するかもなので残しておく -->
     <!-- <MBody color="ink-lighter" size="small">{{ userName }}</MBody> -->
     <!-- <MBody color="ink-lighter" size="small">（{{ formatDate }}）</MBody> -->

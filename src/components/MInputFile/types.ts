@@ -14,10 +14,12 @@ export interface Props {
   imageWidth: string;
   imageHeight: string;
   disabled: boolean;
-  aspectRatio: {
-    x: number;
-    y: number;
-  }| string;
+  aspectRatio:
+    | {
+        x: number;
+        y: number;
+      }
+    | string;
 }
 export interface Data {
   files: {
@@ -31,7 +33,7 @@ export interface Data {
   };
 }
 export interface Computed {
-  isAspectRatio: object | string
+  isAspectRatio: object | string;
   findFileImagePath: string;
   setlimitSize: number;
   inputFileStyle: object;

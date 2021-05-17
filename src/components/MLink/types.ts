@@ -12,6 +12,7 @@ export interface Props {
   bold: boolean;
   underline: boolean;
   blank: boolean;
+  customStyle: object;
 }
 export interface Data {}
 export interface Computed {}

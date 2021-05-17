@@ -5,12 +5,11 @@
     :class="[
       color ? `m-link__color--${color}` : '',
       size ? `m-link__size--${size}` : '',
-      type ? `m-link-${type}` : ''
+      type ? `m-link-${type}` : '',
+      bold ? 'm-link--bold' : '',
+      underline ? 'm-link--underline' : ''
     ]"
-    :style="[
-      bold ? { 'font-weight': 'bold' } : '',
-      underline ? { 'text-decoration': 'underline' } : ''
-    ]"
+    :style="customStyle"
     :to="to"
     :href="href"
     :target="blank ? '_blank' : '_self'"
@@ -93,6 +92,10 @@ export default Vue.extend<Data, Methods, Computed, Props>({
     blank: {
       type: Boolean,
       default: false
+    },
+    customStyle: {
+      type: Object,
+      default: null
     }
   },
   computed: {
@@ -132,6 +135,14 @@ export default Vue.extend<Data, Methods, Computed, Props>({
     &--x-small {
       @include link-x-small;
     }
+  }
+
+  &--bold {
+    font-weight: bold;
+  }
+
+  &--underline {
+    text-decoration: underline;
   }
 }
 .m-link-solo {
