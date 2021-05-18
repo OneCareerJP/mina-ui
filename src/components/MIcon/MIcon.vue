@@ -1,17 +1,16 @@
 <template>
-  <div v-on="listners">
-    <FontAwesomeLayers
-      class="m-icon__layers"
-      :style="{ width: size, height: size }"
-    >
-      <FontAwesomeIcon
-        class="m-icon__icon"
-        :class="[innerClass, color ? `m-icon__color--${color}` : '']"
-        :icon="[iconType, iconName]"
-        :style="iconStyle"
-      />
-    </FontAwesomeLayers>
-  </div>
+  <FontAwesomeLayers
+    class="m-icon__layers"
+    :style="{ width: size, height: size }"
+    v-on="listners"
+  >
+    <FontAwesomeIcon
+      class="m-icon__icon"
+      :class="[innerClass, color ? `m-icon__color--${color}` : '']"
+      :icon="[iconType, iconName]"
+      :style="iconStyle"
+    />
+  </FontAwesomeLayers>
 </template>
 
 <script lang="ts">
