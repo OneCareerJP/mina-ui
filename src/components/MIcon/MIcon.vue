@@ -2,6 +2,7 @@
   <FontAwesomeLayers
     class="m-icon__layers"
     :style="{ width: size, height: size }"
+    v-on="listners"
   >
     <FontAwesomeIcon
       class="m-icon__icon"
@@ -99,6 +100,9 @@ export default Vue.extend<Data, Methods, Computed, Props>({
         color: this.customColor
       };
       return this.customStyle ? { ...style, ...this.customStyle } : style;
+    },
+    listeners() {
+      return { ...this.$listeners };
     }
   }
 });
