@@ -10,7 +10,10 @@
     :disabled="disabled || processing"
     v-on="listeners"
   >
-    <div :class="processing ? `m-button--processing` : ''">
+    <div
+      :style="innerStyle"
+      :class="[innerClass, processing ? `m-button--processing` : '']"
+    >
       <slot name="left" />
       <MIcon
         v-if="icon"
@@ -93,6 +96,14 @@ export default Vue.extend<Data, Methods, Computed, Props>({
     customStyle: {
       type: Object,
       default: null
+    },
+    innerStyle: {
+      type: Object,
+      default: null
+    },
+    innerClass: {
+      type: String,
+      default: ''
     }
   },
   computed: {
