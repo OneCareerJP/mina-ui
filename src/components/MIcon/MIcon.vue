@@ -1,16 +1,17 @@
 <template>
-  <FontAwesomeLayers
-    class="m-icon__layers"
-    :style="{ width: size, height: size }"
-    v-on="listners"
-  >
-    <FontAwesomeIcon
-      class="m-icon__icon"
-      :class="[innerClass, color ? `m-icon__color--${color}` : '']"
-      :icon="[iconType, iconName]"
-      :style="iconStyle"
-    />
-  </FontAwesomeLayers>
+  <div class="m-icon" v-on="listeners">
+    <FontAwesomeLayers
+      class="m-icon__layers"
+      :style="{ width: size, height: size }"
+    >
+      <FontAwesomeIcon
+        class="m-icon__icon"
+        :class="[innerClass, color ? `m-icon__color--${color}` : '']"
+        :icon="[iconType, iconName]"
+        :style="iconStyle"
+      />
+    </FontAwesomeLayers>
+  </div>
 </template>
 
 <script lang="ts">
@@ -119,6 +120,7 @@ export default Vue.extend<Data, Methods, Computed, Props>({
 }
 /* NOTE:Add more colors if needed. */
 .m-icon {
+  display: inline-block;
   &__color {
     &--white {
       color: $mina-white;
