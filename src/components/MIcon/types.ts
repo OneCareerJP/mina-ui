@@ -10,5 +10,6 @@ export interface Props {
 export interface Data {}
 export interface Computed {
   iconStyle: object;
+  listeners: { [key: string]: Function | Function[] };
 }
 export interface Methods {}
