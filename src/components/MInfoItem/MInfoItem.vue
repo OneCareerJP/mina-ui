@@ -4,6 +4,7 @@
       <MLabel color="ink-lighter">{{ labelText }}</MLabel>
       <MIcon
         v-if="icon"
+        class="info-item__icon"
         icon-name="info-circle"
         color="ink-lighter"
         size="12px"
@@ -14,7 +15,7 @@
       :key="itemIndex"
       class="info-item__body"
     >
-      <MBody>{{ item.body }}</MBody>
+      <MBody :color="bodyColor" :size="bodySize" :weight="bodyWeight">{{ item.body }}</MBody>
       <MLink v-if="item.url" tag="anchor" color="denim-light" :href="item.url">
         {{ item.link }}
       </MLink>
@@ -68,13 +69,48 @@ export default Vue.extend<Data, Methods, Computed, Props>({
     bodies: {
       type: Array,
       default: () => []
-    }
+    },
+    bodySize: {
+      type: String,
+      default: 'medium',
+      validator(bodySize) {
+        return ['', 'x-small', 'small', 'medium', 'large', 'x-large'].includes(
+          bodySize
+        );
+      }
+    },
+    bodyColor: {
+      type: String,
+      default: '',
+      validator(bodySize) {
+        return [
+          '',
+          'ink',
+          'ink-light',
+          'ink-lighter',
+          'white',
+          'indigo'
+        ].includes(bodySize);
+      }
+    },
+    bodyWeight: {
+      type: String,
+      default: '',
+      validator(bodySize) {
+        return ['', 'slim', 'slightly-thick', 'bold'].includes(
+          bodySize
+        );
+      }
+    },
   }
 });
 </script>
 
 <style lang="scss" scoped>
 .info-item {
+  &__icon {
+    margin: 0 0 0 8px;
+  }
   &__body {
     margin: 8px 0 0;
   }
