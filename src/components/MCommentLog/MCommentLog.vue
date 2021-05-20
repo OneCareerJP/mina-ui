@@ -4,7 +4,7 @@
       class="m-comment-log__body"
       color="ink-lighter"
       size="small"
-      v-html="$sanitize(/\n/g ? comment.replace(/\n/g, '<br/>') : '')"
+      v-html="$sanitize(comment ? comment.replace(/\n/g, '<br/>') : '')"
     />
     <!-- 使用するかもなので残しておく -->
     <!-- <MBody color="ink-lighter" size="small">{{ userName }}</MBody> -->
