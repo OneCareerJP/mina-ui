@@ -12,6 +12,8 @@ export interface Props {
   disabled: boolean;
   processing: boolean;
   customStyle: object;
+  innerStyle: object;
+  innerClass: string;
 }
 export interface Data {}
 export interface Computed {

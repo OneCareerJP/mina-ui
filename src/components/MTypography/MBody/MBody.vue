@@ -44,7 +44,10 @@ export default Vue.extend<Data, Methods, Computed, Props>({
     },
     weight: {
       type: String,
-      default: ''
+      default: '',
+      validator(weight) {
+        return ['', 'slim', 'slightly-thick', 'bold'].includes(weight);
+      }
     },
     lineClamp: {
       type: Number,
