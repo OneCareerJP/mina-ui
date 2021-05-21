@@ -15,7 +15,9 @@
       :key="itemIndex"
       class="info-item__body"
     >
-      <MBody :color="bodyColor" :size="bodySize" :weight="bodyWeight">{{ item.body }}</MBody>
+      <MBody :color="bodyColor" :size="bodySize" :weight="bodyWeight">{{
+        item.body
+      }}</MBody>
       <MLink v-if="item.url" tag="anchor" color="denim-light" :href="item.url">
         {{ item.link }}
       </MLink>
@@ -97,11 +99,9 @@ export default Vue.extend<Data, Methods, Computed, Props>({
       type: String,
       default: '',
       validator(bodySize) {
-        return ['', 'slim', 'slightly-thick', 'bold'].includes(
-          bodySize
-        );
+        return ['', 'slim', 'slightly-thick', 'bold'].includes(bodySize);
       }
-    },
+    }
   }
 });
 </script>
