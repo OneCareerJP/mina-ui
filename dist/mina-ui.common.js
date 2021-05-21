@@ -12925,12 +12925,12 @@ var MCheckbox_component = normalizeComponent(
 // CONCATENATED MODULE: ./src/components/MCheckboxGroup/MCheckbox/index.ts
 
 
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"73132ac4-vue-loader-template"}!./node_modules/@vue/cli-service/node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/@vue/cli-service/node_modules/vue-loader/lib??vue-loader-options!./src/components/MCommentLog/MCommentLog.vue?vue&type=template&id=b72c82a8&
-var MCommentLogvue_type_template_id_b72c82a8_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"m-comment-log"},[_c('MBody',{staticClass:"m-comment-log__body",attrs:{"color":"ink-lighter","size":"small"},domProps:{"innerHTML":_vm._s(_vm.$sanitize(_vm.comment.replace(/\n/g, '<br/>')))}})],1)}
-var MCommentLogvue_type_template_id_b72c82a8_staticRenderFns = []
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"73132ac4-vue-loader-template"}!./node_modules/@vue/cli-service/node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/@vue/cli-service/node_modules/vue-loader/lib??vue-loader-options!./src/components/MCommentLog/MCommentLog.vue?vue&type=template&id=353d320c&
+var MCommentLogvue_type_template_id_353d320c_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"m-comment-log"},[_c('MBody',{staticClass:"m-comment-log__body",attrs:{"color":"ink-lighter","size":"small"},domProps:{"innerHTML":_vm._s(_vm.$sanitize(_vm.comment ? _vm.comment.replace(/\n/g, '<br/>') : ''))}})],1)}
+var MCommentLogvue_type_template_id_353d320c_staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./src/components/MCommentLog/MCommentLog.vue?vue&type=template&id=b72c82a8&
+// CONCATENATED MODULE: ./src/components/MCommentLog/MCommentLog.vue?vue&type=template&id=353d320c&
 
 // EXTERNAL MODULE: ./node_modules/dayjs/dayjs.min.js
 var dayjs_min = __webpack_require__("5a0c");
@@ -13056,8 +13056,8 @@ var MBody_component = normalizeComponent(
 
 var MCommentLog_component = normalizeComponent(
   MCommentLog_MCommentLogvue_type_script_lang_ts_,
-  MCommentLogvue_type_template_id_b72c82a8_render,
-  MCommentLogvue_type_template_id_b72c82a8_staticRenderFns,
+  MCommentLogvue_type_template_id_353d320c_render,
+  MCommentLogvue_type_template_id_353d320c_staticRenderFns,
   false,
   null,
   null,
