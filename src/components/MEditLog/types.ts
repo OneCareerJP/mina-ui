@@ -1,11 +1,11 @@
 export interface Props {
   userName: string;
   labelText: string;
-  editDate: string;
+  editDatetime: string;
   explanationText: string;
 }
 export interface Data {}
 export interface Computed {
-  formatDate: string;
+  formatDatetime: string;
 }
 export interface Methods {}
