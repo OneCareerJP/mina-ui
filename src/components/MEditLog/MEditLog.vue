@@ -8,7 +8,7 @@
     </div>
     <div class="m-edit-log__text-wrapper">
       <MLabel size="large" color="ink-lighter">
-        {{ labelText }}（{{ formatDate }}）
+        {{ labelText }}（{{ formatDatetime }}）
       </MLabel>
       <div v-if="explanationText" class="m-edit-log__explanation">
         <MBody
@@ -47,7 +47,7 @@ export default Vue.extend<Data, Methods, Computed, Props>({
       type: String,
       default: ''
     },
-    editDate: {
+    editDatetime: {
       type: String,
       default: '2000-01-01'
     },
@@ -57,8 +57,8 @@ export default Vue.extend<Data, Methods, Computed, Props>({
     }
   },
   computed: {
-    formatDate() {
-      return dayjs(this.editDate).format('YYYY/MM/DD');
+    formatDatetime() {
+      return dayjs(this.editDatetime).format('YYYY/MM/DD HH:mm:ss');
     }
   }
 });
