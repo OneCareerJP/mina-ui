@@ -1,33 +1,34 @@
 import Vue from 'vue';
 import { VueConstructor } from 'vue';
-import { MAccordion } from './components/MAccordion';
-import { MButton } from './components/MButton';
-import { MCheckboxGroup } from './components/MCheckboxGroup';
-import { MCheckbox } from './components/MCheckboxGroup/MCheckbox';
-import { MCommentLog } from './components/MCommentLog';
-import { MEditLog } from './components/MEditLog';
-import { MHeading } from './components/MHeading';
-import { MIcon } from './components/MIcon';
-import { MIframe } from './components/MIframe';
-import { MImage } from './components/MImage';
-import { MInfoItem } from './components/MInfoItem';
-import { MInputFile } from './components/MInputFile';
-import { MInputText } from './components/MInputText';
-import { MLink } from './components/MLink';
-import { MLoading } from './components/MLoading';
-import { MModal } from './components/MModal';
-import { MPageTop } from './components/MPageTop';
-import { MPanel } from './components/MPanel';
-import { MRadioGroup } from './components/MRadioGroup';
-import { MRadio } from './components/MRadioGroup/MRadio';
-import { MSelectbox } from './components/MSelectbox';
-import { MSvg } from './components/MSvg';
-import { MTabContent, MTabs } from './components/MTabGroup';
-import { MTable } from './components/MTable';
-import { MTag } from './components/MTag';
-import { MTextarea } from './components/MTextarea';
-import { MTooltip } from './components/MTooltip';
-import { MBody, MEmphasis, MLabel } from './components/MTypography';
+import { MAccordion } from './components/atoms/MAccordion';
+import { MButton } from './components/atoms/MButton';
+import { MCheckboxGroup } from './components/atoms/MCheckboxGroup';
+import { MCheckbox } from './components/atoms/MCheckboxGroup/MCheckbox';
+import { MCommentLog } from './components/atoms/MCommentLog';
+import { MEditLog } from './components/atoms/MEditLog';
+import { MHeading } from './components/atoms/MHeading';
+import { MIcon } from './components/atoms/MIcon';
+import { MIframe } from './components/atoms/MIframe';
+import { MImage } from './components/atoms/MImage';
+import { MInfoItem } from './components/atoms/MInfoItem';
+import { MInputFile } from './components/atoms/MInputFile';
+import { MInputText } from './components/atoms/MInputText';
+import { MLink } from './components/atoms/MLink';
+import { MLoading } from './components/atoms/MLoading';
+import { MModal } from './components/atoms/MModal';
+import { MPageTop } from './components/atoms/MPageTop';
+import { MPanel } from './components/atoms/MPanel';
+import { MRadioGroup } from './components/atoms/MRadioGroup';
+import { MRadio } from './components/atoms/MRadioGroup/MRadio';
+import { MSelectbox } from './components/atoms/MSelectbox';
+import { MSvg } from './components/atoms/MSvg';
+import { MTabContent, MTabs } from './components/atoms/MTabGroup';
+import { MTable } from './components/atoms/MTable';
+import { MTag } from './components/atoms/MTag';
+import { MTextarea } from './components/atoms/MTextarea';
+import { MTooltip } from './components/atoms/MTooltip';
+import { MBody, MEmphasis, MLabel } from './components/atoms/MTypography';
+import { Alert } from './components/molecules/Alert';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fas } from '@fortawesome/free-solid-svg-icons';
 import {
@@ -74,7 +75,8 @@ const components = [
   MTooltip,
   MBody,
   MEmphasis,
-  MLabel
+  MLabel,
+  Alert
 ];
 
 const install = function(Vue: VueConstructor) {
@@ -117,5 +119,6 @@ export default {
   MTooltip,
   MBody,
   MEmphasis,
-  MLabel
+  MLabel,
+  Alert
 };
