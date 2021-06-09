@@ -15,6 +15,7 @@ yarn add oc-mina-ui
 # Import components
 
 ## Fully import
+```js
 // main.js
 
 import Vue from 'vue';
@@ -25,6 +26,7 @@ Vue.use(MinaUi);
 ```
 
 ## On demand
+```js
 // main.js
 
 import Vue from 'vue';
@@ -39,5 +41,3 @@ new Vue({
   render: h => h(App)
 });
 ```
-
-
