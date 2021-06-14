@@ -34,10 +34,10 @@
 <script lang="ts">
 import Vue from 'vue';
 import { Data, Methods, Computed, Props } from './types';
-import MLabel from '@/components/MTypography/MLabel/MLabel.vue';
-import MBody from '@/components/MTypography/MBody/MBody.vue';
-import MLink from '@/components/MLink/MLink.vue';
-import MIcon from '@/components/MIcon/MIcon.vue';
+import MLabel from '@/components/atoms/MTypography/MLabel/MLabel.vue';
+import MBody from '@/components/atoms/MTypography/MBody/MBody.vue';
+import MLink from '@/components/atoms/MLink/MLink.vue';
+import MIcon from '@/components/atoms/MIcon/MIcon.vue';
 
 export default Vue.extend<Data, Methods, Computed, Props>({
   name: 'MInfoItem',

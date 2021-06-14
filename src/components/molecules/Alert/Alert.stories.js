@@ -1,4 +1,4 @@
-import Alert from '@/components/molecules/Alert/index.vue';
+import Alert from './Alert.vue';
 
 export default {
   title: 'Molecule/Alert',

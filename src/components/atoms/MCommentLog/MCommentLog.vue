@@ -15,7 +15,7 @@
 <script lang="ts">
 import Vue from 'vue';
 import dayjs from 'dayjs';
-import MBody from '@/components/MTypography/MBody/MBody.vue';
+import MBody from '@/components/atoms/MTypography/MBody/MBody.vue';
 import { Data, Methods, Computed, Props } from './types';
 
 export default Vue.extend<Data, Methods, Computed, Props>({
