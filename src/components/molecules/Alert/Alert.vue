@@ -4,15 +4,23 @@
       <div class="alert__icon">
         <MIcon icon-name="lightbulb" class="alert__icon-fontawesome" />
       </div>
-      <MBody size="medium">
-        <MEmphasis>{{ title }}</MEmphasis>
-      </MBody>
+      <div v-if="title.length">
+        <MBody size="medium">
+          <MEmphasis>{{ title }}</MEmphasis>
+        </MBody>
+      </div>
     </div>
     <template v-if="list.length">
       <div class="alert__list-wrapper">
-        <MBody size="small">以下の項目に変更があります：</MBody>
+        <div v-if="description.length">
+          <MBody size="small">{{ description }}</MBody>
+        </div>
         <div class="alert__list">
-          <MBody v-for="(item, index) in list" :key="index" size="small">
+          <MBody
+            v-for="(item, index) in list"
+            :key="index"
+            v-vind:size="listsize"
+          >
             ・{{ item }}
           </MBody>
         </div>
@@ -36,6 +44,10 @@ export default Vue.extend<Data, Methods, Computed, Props>({
         return ['', 'draft', 'pending', 'publish'].includes(type);
       }
     },
+    description: {
+      type: String,
+      default: '以下の項目に変更があります：'
+    },
     title: {
       type: String,
       default: ''
@@ -43,6 +55,10 @@ export default Vue.extend<Data, Methods, Computed, Props>({
     list: {
       type: Array,
       default: () => []
+    },
+    listsize: {
+      type: String,
+      default: 'small'
     }
   },
   data() {

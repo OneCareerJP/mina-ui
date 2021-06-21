@@ -5,6 +5,8 @@ export interface Props {
    */
   type: string;
   title: string;
+  description: string;
+  listsize: string;
   list: {
     text: string;
   }[];
