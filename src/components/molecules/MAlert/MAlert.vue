@@ -46,7 +46,7 @@ export default Vue.extend<Data, Methods, Computed, Props>({
     },
     description: {
       type: String,
-      default: '以下の項目に変更があります：'
+      default: ''
     },
     title: {
       type: String,
