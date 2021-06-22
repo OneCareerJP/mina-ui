@@ -4,7 +4,7 @@
       <div class="alert__icon">
         <MIcon icon-name="lightbulb" class="alert__icon-fontawesome" />
       </div>
-      <div v-if="title.length">
+      <div v-if="title">
         <MBody size="medium">
           <MEmphasis>{{ title }}</MEmphasis>
         </MBody>
@@ -35,7 +35,7 @@ import Vue from 'vue';
 import { Data, Methods, Computed, Props } from './types';
 
 export default Vue.extend<Data, Methods, Computed, Props>({
-  name: 'Alert',
+  name: 'MAlert',
   props: {
     type: {
       type: String,
@@ -60,9 +60,6 @@ export default Vue.extend<Data, Methods, Computed, Props>({
       type: String,
       default: 'small'
     }
-  },
-  data() {
-    return {};
   },
   computed: {
     alertType() {

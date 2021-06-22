@@ -1,8 +1,8 @@
-import Alert from './Alert.vue';
+import MAlert from './MAlert.vue';
 
 export default {
-  title: 'Molecule/Alert',
-  component: Alert,
+  title: 'Molecule/MAlert',
+  component: MAlert,
   argTypes: {
     type: {
       control: {
@@ -15,21 +15,21 @@ export default {
 
 const Template = (args, { argTypes }) => ({
   props: Object.keys(argTypes),
-  components: { Alert },
+  components: { MAlert },
   template: `
-  <Alert
+  <MAlert
     :list="alertList"
     v-bind="$props"
   />`,
   data() {
     return {
-      alertList: ['企業情報', '企業の魅力']
+      alertList: ['メールアドレス', '住所']
     };
   }
 });
 
 export const Default = Template.bind({});
 Default.args = {
-  title: 'クライアントから承認依頼がきています',
+  title: '登録内容を変更しようとしています。変更内容が正しいか確認してください。',
   type: 'draft'
 };

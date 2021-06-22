@@ -28,7 +28,7 @@ import { MTag } from './components/atoms/MTag';
 import { MTextarea } from './components/atoms/MTextarea';
 import { MTooltip } from './components/atoms/MTooltip';
 import { MBody, MEmphasis, MLabel } from './components/atoms/MTypography';
-import { Alert } from './components/molecules/Alert';
+import { MAlert } from './components/molecules/MAlert';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fas } from '@fortawesome/free-solid-svg-icons';
 import {
@@ -76,7 +76,7 @@ const components = [
   MBody,
   MEmphasis,
   MLabel,
-  Alert
+  MAlert
 ];
 
 const install = function(Vue: VueConstructor) {
@@ -120,5 +120,5 @@ export default {
   MBody,
   MEmphasis,
   MLabel,
-  Alert
+  MAlert
 };
