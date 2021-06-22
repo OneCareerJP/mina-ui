@@ -14,7 +14,7 @@
 <script lang="ts">
 import Vue from 'vue';
 import { Data, Methods, Computed, Props } from './types';
-import MPanel from '@/components/MPanel/MPanel.vue';
+import MPanel from '@/components/atoms/MPanel/MPanel.vue';
 
 export default Vue.extend<Data, Methods, Computed, Props>({
   name: 'MTooltip',
