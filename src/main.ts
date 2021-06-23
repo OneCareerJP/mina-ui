@@ -87,8 +87,7 @@ const install = function(Vue: VueConstructor) {
   });
 };
 
-export default {
-  install,
+export {
   MAccordion,
   MButton,
   MCheckbox,
@@ -121,4 +120,8 @@ export default {
   MEmphasis,
   MLabel,
   MAlert
+};
+
+export default {
+  install
 };
