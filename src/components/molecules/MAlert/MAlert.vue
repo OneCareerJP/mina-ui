@@ -12,7 +12,7 @@
     </div>
     <template v-if="list.length">
       <div class="alert__list-wrapper">
-        <div v-if="description.length">
+        <div v-if="description">
           <MBody size="small">{{ description }}</MBody>
         </div>
         <div class="alert__list">
