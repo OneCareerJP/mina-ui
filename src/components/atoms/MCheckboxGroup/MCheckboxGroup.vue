@@ -12,7 +12,7 @@ import Vue from 'vue';
 import { Data, Methods, Computed, Props } from './types';
 
 export default Vue.extend<Data, Methods, Computed, Props>({
-  name: 'MRadioGroup',
+  name: 'MCheckboxGroup',
   inheritAttrs: false,
   props: {
     vertical: {
