@@ -69,7 +69,8 @@ export default Vue.extend<Data, Methods, Computed, Props>({
           'trash-alt',
           'times',
           'user',
-          'users'
+          'users',
+          'envelope'
         ].includes(iconName);
       }
     },

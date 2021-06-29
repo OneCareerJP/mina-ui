@@ -39,7 +39,8 @@ export default {
           'eye',
           'lightbulb',
           'trash-alt',
-          'file-alt'
+          'file-alt',
+          'envelope'
         ]
       }
     }
