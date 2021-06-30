@@ -71,7 +71,9 @@ export default Vue.extend<Data, Methods, Computed, Props>({
           'user',
           'users',
           'envelope',
-          'money-bill-wave'
+          'money-bill-wave',
+          'clipboard-check',
+          'comments'
         ].includes(iconName);
       }
     },

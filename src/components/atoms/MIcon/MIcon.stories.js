@@ -41,7 +41,9 @@ export default {
           'trash-alt',
           'file-alt',
           'envelope',
-          'money-bill-wave'
+          'money-bill-wave',
+          'clipboard-check',
+          'comments'
         ]
       }
     }
