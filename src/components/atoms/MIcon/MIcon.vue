@@ -70,7 +70,8 @@ export default Vue.extend<Data, Methods, Computed, Props>({
           'times',
           'user',
           'users',
-          'envelope'
+          'envelope',
+          'money-bill-wave'
         ].includes(iconName);
       }
     },

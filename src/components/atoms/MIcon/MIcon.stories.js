@@ -40,7 +40,8 @@ export default {
           'lightbulb',
           'trash-alt',
           'file-alt',
-          'envelope'
+          'envelope',
+          'money-bill-wave'
         ]
       }
     }
