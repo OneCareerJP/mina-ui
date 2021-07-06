@@ -2,7 +2,12 @@
   <transition name="modal">
     <div class="m-modal">
       <div class="m-modal__wrapper" @click.self="onCloseModal">
-        <MPanel class="m-modal__container" outlined rounded :width="size">
+        <MPanel
+          class="m-modal__container"
+          outlined
+          rounded
+          :style="containerSize"
+        >
           <section class="m-modal__header">
             <slot name="header" />
           </section>
@@ -35,7 +40,7 @@ export default Vue.extend<Data, Methods, Computed, Props>({
   props: {
     size: {
       type: String,
-      default: '100%'
+      default: ''
     },
     customStyle: {
       type: Object,
