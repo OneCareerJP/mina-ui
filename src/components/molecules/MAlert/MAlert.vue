@@ -19,7 +19,7 @@
           <MBody
             v-for="(item, index) in list"
             :key="index"
-            v-vind:size="listsize"
+            :size="listsize"
           >
             ・{{ item }}
           </MBody>
