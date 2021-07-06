@@ -69,7 +69,11 @@ export default Vue.extend<Data, Methods, Computed, Props>({
           'trash-alt',
           'times',
           'user',
-          'users'
+          'users',
+          'envelope',
+          'money-bill-wave',
+          'clipboard-check',
+          'comments'
         ].includes(iconName);
       }
     },

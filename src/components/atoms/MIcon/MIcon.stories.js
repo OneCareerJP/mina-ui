@@ -39,7 +39,11 @@ export default {
           'eye',
           'lightbulb',
           'trash-alt',
-          'file-alt'
+          'file-alt',
+          'envelope',
+          'money-bill-wave',
+          'clipboard-check',
+          'comments'
         ]
       }
     }
