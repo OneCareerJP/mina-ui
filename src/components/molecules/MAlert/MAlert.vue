@@ -12,14 +12,14 @@
     </div>
     <template v-if="list.length">
       <div class="alert__list-wrapper">
-        <div v-if="description.length">
+        <div v-if="description">
           <MBody size="small">{{ description }}</MBody>
         </div>
         <div class="alert__list">
           <MBody
             v-for="(item, index) in list"
             :key="index"
-            v-vind:size="listsize"
+            :size="listsize"
           >
             ・{{ item }}
           </MBody>
