@@ -1,7 +1,11 @@
 <template>
   <input
     :type="inputType"
-    :class="[`${blockName}`, disabled ? `${blockName}--disabled` : '']"
+    :class="[
+      `${blockName}`,
+      disabled ? `${blockName}--disabled` : '',
+      error ? `${blockName}--error` : ''
+    ]"
     :style="{ width: width, 'min-width': minWidth, height: height }"
     :name="name"
     :value="value"
@@ -68,6 +72,10 @@ export default Vue.extend<Data, Methods, Computed, Props>({
     readonly: {
       type: Boolean,
       default: false
+    },
+    error: {
+      type: Boolean,
+      default: false
     }
   },
   computed: {
@@ -105,6 +113,10 @@ export default Vue.extend<Data, Methods, Computed, Props>({
   &::placeholder {
     color: $mina-indigo-lighter;
   }
+
+  &--error {
+    border-color: $mina-red;
+  }
 }
 
 .m-input-text-standard {
@@ -118,6 +130,10 @@ export default Vue.extend<Data, Methods, Computed, Props>({
 
   &::placeholder {
     color: $tx-black-lighter;
+  }
+
+  &--error {
+    border-color: $mina-red;
   }
 
   &--disabled {

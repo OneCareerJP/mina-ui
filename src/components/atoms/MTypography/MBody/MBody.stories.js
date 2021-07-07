@@ -4,16 +4,30 @@ export default {
   title: 'UI/MTypography/MBody',
   component: MBody,
   argTypes: {
-    bodySize: {
+    size: {
       control: {
         type: 'select',
         options: ['', 'x-small', 'small', 'medium', 'large', 'x-large']
       }
     },
-    bodyColor: {
+    color: {
       control: {
         type: 'select',
-        options: ['', 'ink', 'ink-light', 'ink-lighter', 'white', 'indigo']
+        options: [
+          '',
+          'ink',
+          'ink-light',
+          'ink-lighter',
+          'white',
+          'indigo',
+          'error'
+        ]
+      }
+    },
+    weight: {
+      control: {
+        type: 'select',
+        options: ['', 'slim', 'slightly-thick', 'bold']
       }
     }
   }
