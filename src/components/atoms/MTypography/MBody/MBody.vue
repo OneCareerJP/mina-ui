@@ -38,7 +38,8 @@ export default Vue.extend<Data, Methods, Computed, Props>({
           'ink-light',
           'ink-lighter',
           'white',
-          'indigo'
+          'indigo',
+          'error'
         ].includes(color);
       }
     },
@@ -111,6 +112,10 @@ export default Vue.extend<Data, Methods, Computed, Props>({
 
     &--white {
       color: $mina-white;
+    }
+
+    &--error {
+      color: $mina-red;
     }
   }
 

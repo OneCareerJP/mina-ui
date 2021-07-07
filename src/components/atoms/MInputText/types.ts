@@ -10,6 +10,7 @@ export interface Props {
   minWidth: string;
   disabled: boolean;
   readonly: boolean;
+  error: boolean;
 }
 export interface Data {}
 export interface Computed {
