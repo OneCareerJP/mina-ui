@@ -2,6 +2,20 @@
   "name": "oc-mina-ui",
   "version": "0.1.2",
   "description": "mina-ui is a component library for Vue.js(v2.6)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OneCareerJP/mina-ui.git"
+  },
+  "bugs": {
+    "url": "https://github.com/OneCareerJP/mina-ui/issues"
+  },
+  "keywords": [
+    "oc-mina-ui",
+    "mina-ui",
+    "vue",
+    "components"
+  ],
   "private": false,
   "main": "dist/mina-ui.common.js",
   "scripts": {
