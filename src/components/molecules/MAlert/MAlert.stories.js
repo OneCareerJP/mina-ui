@@ -30,6 +30,7 @@ const Template = (args, { argTypes }) => ({
 
 export const Default = Template.bind({});
 Default.args = {
-  title: '登録内容を変更しようとしています。変更内容が正しいか確認してください。',
+  title:
+    '登録内容を変更しようとしています。変更内容が正しいか確認してください。',
   type: 'draft'
 };
