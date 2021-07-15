@@ -16,11 +16,7 @@
           <MBody size="small">{{ description }}</MBody>
         </div>
         <div class="alert__list">
-          <MBody
-            v-for="(item, index) in list"
-            :key="index"
-            :size="listsize"
-          >
+          <MBody v-for="(item, index) in list" :key="index" :size="listsize">
             ・{{ item }}
           </MBody>
         </div>
