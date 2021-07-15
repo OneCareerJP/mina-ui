@@ -4,6 +4,7 @@
     :class="[
       size ? `m-button--${size}` : '',
       type ? `m-button--${type}` : '',
+      bold ? `m-button--bold` : '',
       disabled ? `m-button--disabled` : ''
     ]"
     :style="buttonStyle"
@@ -104,6 +105,10 @@ export default Vue.extend<Data, Methods, Computed, Props>({
     innerClass: {
       type: String,
       default: ''
+    },
+    bold: {
+      type: Boolean,
+      default: false
     }
   },
   computed: {
@@ -241,6 +246,10 @@ export default Vue.extend<Data, Methods, Computed, Props>({
     &:active {
       top: 1px;
     }
+  }
+
+  &--bold {
+    font-weight: bold;
   }
 }
 </style>
