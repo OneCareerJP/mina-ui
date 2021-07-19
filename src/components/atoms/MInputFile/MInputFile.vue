@@ -191,8 +191,8 @@ export default Vue.extend<Data, Methods, Computed, Props>({
   },
   computed: {
     isAspectRatio() {
-      if (typeof this.checked === 'string') return '{ x: 1, y: 1 }';
-      if (typeof this.checked === 'function') return this.aspectRatio();
+      if (typeof this.aspectRatio === 'function') return this.aspectRatio();
+      if (typeof this.aspectRatio === 'object') return this.aspectRatio;
       return { x: 1, y: 1 };
     },
     findFileImagePath() {
