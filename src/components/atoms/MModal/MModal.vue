@@ -8,13 +8,13 @@
           rounded
           :style="containerSize"
         >
-          <section class="m-modal__header">
+          <section v-if="$slots.header" class="m-modal__header">
             <slot name="header" />
           </section>
-          <section class="m-modal__body">
+          <section v-if="$slots.body" class="m-modal__body">
             <slot name="body" />
           </section>
-          <section class="m-modal__footer">
+          <section v-if="$slots.footer" class="m-modal__footer">
             <slot name="footer" />
           </section>
         </MPanel>
