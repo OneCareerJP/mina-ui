@@ -87,6 +87,9 @@ export default Vue.extend<Data, Methods, Computed, Props>({
     &--denim-light {
       color: $mina-denim-light;
     }
+    &--caution {
+      color: $mina-red;
+    }
   }
 }
 </style>
