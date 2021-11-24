@@ -30,7 +30,9 @@ export default Vue.extend<Data, Methods, Computed, Props>({
       type: String,
       default: 'text',
       validator(inputType: string) {
-        return ['text', 'tel', 'url', 'password', 'search'].includes(inputType);
+        return ['text', 'tel', 'url', 'password', 'search', 'time'].includes(
+          inputType
+        );
       }
     },
     name: {
