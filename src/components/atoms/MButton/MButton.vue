@@ -5,6 +5,7 @@
       size ? `m-button--${size}` : '',
       type ? `m-button--${type}` : '',
       bold ? `m-button--bold` : '',
+      error ? `m-button--error` : '',
       disabled ? `m-button--disabled` : ''
     ]"
     :style="buttonStyle"
@@ -109,6 +110,10 @@ export default Vue.extend<Data, Methods, Computed, Props>({
     bold: {
       type: Boolean,
       default: false
+    },
+    error: {
+      type: Boolean,
+      default: false
     }
   },
   computed: {
@@ -129,6 +134,8 @@ export default Vue.extend<Data, Methods, Computed, Props>({
 
 <style lang="scss" scoped>
 .m-button {
+  $this: &;
+
   padding: 10px;
   width: 100%;
   border-radius: 4px;
@@ -227,6 +234,11 @@ export default Vue.extend<Data, Methods, Computed, Props>({
     &:active {
       position: relative;
       top: 1px;
+    }
+
+    &#{$this}--error {
+      border-color: $mina-red;
+      color: $mina-red;
     }
   }
 

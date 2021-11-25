@@ -15,6 +15,7 @@ export interface Props {
   innerStyle: object;
   innerClass: string;
   bold: boolean;
+  error: boolean;
 }
 export interface Data {}
 export interface Computed {
