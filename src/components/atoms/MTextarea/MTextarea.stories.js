@@ -9,7 +9,12 @@ export default {
 const Template = (args, { argTypes }) => ({
   props: Object.keys(argTypes),
   components: { MTextarea },
-  template: `<MTextarea v-bind="$props" />`,
+  template: `
+    <form>
+      <MTextarea v-bind="$props" />
+      <input type="submit" value="Submit" />
+    </form>
+  `,
   data() {
     return {
       sample: ''
@@ -24,5 +29,8 @@ Default.args = {
   width: '400px',
   height: '100px',
   maxWidth: '400px',
-  maxHeight: '200px'
+  maxHeight: '200px',
+  maxlength: 20,
+  minlength: 5,
+  required: true
 };
