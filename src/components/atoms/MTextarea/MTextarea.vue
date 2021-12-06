@@ -7,6 +7,7 @@
       :name="name"
       :placeholder="placeholder"
       :maxlength="maxlength"
+      :minlength="minlength"
       :value="value"
       :rows="rows"
       :cols="cols"
@@ -67,6 +68,10 @@ export default Vue.extend<Data, Methods, Computed, Props>({
       default: 'off'
     },
     maxlength: {
+      type: Number,
+      default: undefined
+    },
+    minlength: {
       type: Number,
       default: undefined
     },
