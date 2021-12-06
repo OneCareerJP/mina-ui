@@ -10,6 +10,7 @@ export interface Props {
   width: string;
   height: string;
   maxlength: number;
+  minlength: number;
   rows: number;
   cols: number;
   disabled: boolean;
