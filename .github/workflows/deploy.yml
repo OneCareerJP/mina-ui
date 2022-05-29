@@ -3,7 +3,7 @@ name: StoryBook Deploy S3
 on:
   push:
     branches:
-      - main
+      - feat/deploy-storybook
 
 jobs:
   build:
