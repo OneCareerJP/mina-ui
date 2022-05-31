@@ -67,25 +67,25 @@ const Template = (args, { argTypes }) => ({
 
 export const Standard = Template.bind({});
 Standard.args = {
-  label: 'Button'
+  label: 'BUTTON'
 };
 
 export const Primary = Template.bind({});
 Primary.args = {
-  label: 'Button',
+  label: 'BUTTON',
   type: 'primary',
   icon: true,
   iconName: 'plus-circle'
 };
 export const Outlined = Template.bind({});
 Outlined.args = {
-  label: 'Button',
+  label: 'BUTTON',
   type: 'outlined'
 };
 
 export const IconRounded = Template.bind({});
 IconRounded.args = {
-  label: 'Button',
+  label: 'BUTTON',
   type: 'icon-rounded',
   icon: true,
   iconName: 'pause-circle',
