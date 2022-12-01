@@ -87,6 +87,10 @@ export default Vue.extend<Data, Methods, Computed, Props>({
       type: Array,
       default: () => []
     },
+    itemValue: {
+      type: String,
+      default: ''
+    },
     itemText: {
       type: String,
       default: ''
@@ -111,9 +115,23 @@ export default Vue.extend<Data, Methods, Computed, Props>({
   },
   computed: {
     setSelectedValue() {
-      return !this.selectedValue
-        ? this.initialSelectedValue
-        : this.selectedValue;
+      if (!this.selectList) return '';
+
+      if (!this.selectedValue) {
+        if (!this.itemValue) return this.initialSelectedValue;
+        const selectedItem = this.selectList.find(
+          element => element[this.itemValue] === this.initialSelectedValue
+        );
+        if (!selectedItem) return '';
+        return selectedItem[this.itemText];
+      } else {
+        if (!this.itemValue) return this.selectedValue;
+        const selectedItem = this.selectList.find(
+          element => element[this.itemValue] === this.selectedValue
+        );
+        if (!selectedItem) return '';
+        return selectedItem[this.itemText];
+      }
     },
     buttonElements() {
       return this.$refs.button;

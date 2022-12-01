@@ -3,6 +3,7 @@ export interface Props {
   initialSelectedValue: string | number;
   selectedValue: string | number;
   selectList: string[]; // It will be reflected as soon as the response is known.
+  itemValue: string;
   itemText: string;
   minWidth: string;
   inputDisabled: boolean;
