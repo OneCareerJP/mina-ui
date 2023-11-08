@@ -235,9 +235,11 @@ export default Vue.extend<Data, Methods, Computed, Props>({
   &__list-item {
     display: flex;
     align-items: center;
+    text-align: left;
     width: 100%;
-    height: 32px;
-    padding-left: 20px;
+    min-height: 32px;
+    height: fit-content;
+    padding: 8px 8px 8px 20px;
     background: none;
     border: none;
     font-size: $font-x-small;
